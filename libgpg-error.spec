@@ -10,7 +10,7 @@ Source0:	ftp://ftp.gnupg.org/gcrypt/libgpg-error/%{name}-%{version}.tar.gz
 Patch0:		%{name}-pl.po-update.patch
 URL:		http://www.gnupg.org/
 BuildRequires:	autoconf >= 2.57
-BuildRequires:	automake >= 1.7.6
+BuildRequires:	automake >= 1:1.7.6
 BuildRequires:	gettext-devel >= 0.12.1
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
