@@ -102,6 +102,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc README ChangeLog NEWS AUTHORS
+%attr(755,root,root) %{_bindir}/gpg-error
 %attr(755,root,root) %{_libdir}/lib*.so.*.*.*
 
 %files devel
