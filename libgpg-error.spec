@@ -2,7 +2,7 @@ Summary:	Library libgpg-error
 Summary(pl):	Biblioteka libgpg-error
 Name:		libgpg-error
 Version:	1.0
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/libgpg-error/%{name}-%{version}.tar.gz
@@ -14,6 +14,9 @@ BuildRequires:	automake >= 1.7.6
 BuildRequires:	gettext-devel >= 0.12.1
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_bindir		/bin
+%define		_libdir		/lib
 
 %description
 libgpg-error is a library that defines common error values for all
