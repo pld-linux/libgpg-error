@@ -2,7 +2,7 @@ Summary:	Library libgpg-error
 Summary(pl):	Biblioteka libgpg-error
 Name:		libgpg-error
 Version:	0.7
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/alpha/libgpg-error/%{name}-%{version}.tar.gz
@@ -74,6 +74,8 @@ Pakiet zawiera statyczne biblioteki libgpg-error.
 
 cp %{SOURCE1} po/pl.po
 echo 'pl' >> po/LINGUAS
+
+rm -f po/stamp-po
 
 %build
 %{__gettextize}
