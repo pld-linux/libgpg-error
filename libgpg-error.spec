@@ -1,17 +1,17 @@
 Summary:	Library libgpg-error
 Summary(pl):	Biblioteka libgpg-error
 Name:		libgpg-error
-Version:	0.1
+Version:	0.3
 Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/alpha/libgpg-error/%{name}-%{version}.tar.gz
-# Source0-md5:	b82fd5a0874b0149ade1de327a3b0b9d
+# Source0-md5:	84a5ab3b9efab0c95cd791a628697a73
 URL:		http://www.gnupg.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	libtool
-BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -36,7 +36,7 @@ GnuPG components. Among these are GPG, GPGSM, GPGME, GPG-Agent,
 libgcrypt, pinentry, SmartCard Daemon and possibly more in the future.
 
 This package contains the header files needed to develop programs that
-use these libgpg-error
+use these libgpg-error.
 
 %description devel -l pl
 libgpg-error jest bibliotek± definiuj±c± warto¶ci b³êdów wspólne dla
