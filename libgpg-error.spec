@@ -16,7 +16,7 @@ BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_bindir		/bin
-%define		_libdir		/lib
+%define		_libdir		/%{_lib}
 
 %description
 libgpg-error is a library that defines common error values for all
