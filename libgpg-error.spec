@@ -2,11 +2,12 @@ Summary:	Library libgpg-error
 Summary(pl):	Biblioteka libgpg-error
 Name:		libgpg-error
 Version:	0.6
-Release:	2
+Release:	3
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/alpha/libgpg-error/%{name}-%{version}.tar.gz
 # Source0-md5:	516623893401d391b6c346cba543681d
+Source1:	%{name}-pl.po
 Patch0:		%{name}-am18.patch
 URL:		http://www.gnupg.org/
 BuildRequires:	autoconf >= 2.57
@@ -29,7 +30,7 @@ libgcrypt, pinentry, SmartCard Daemon i inne - w przysz³o¶ci.
 Summary:	Header files for %{name}
 Summary(pl):	Pliki nag³ówkowe dla %{name}
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 libgpg-error is a library that defines common error values for all
@@ -51,7 +52,7 @@ u¿ywaj±cych biblioteki libgpg-error.
 Summary:	Static version of %{name} library
 Summary(pl):	Statyczna wersja biblioteki %{name}
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 libgpg-error is a library that defines common error values for all
@@ -70,6 +71,9 @@ Pakiet zawiera statyczne biblioteki libgpg-error.
 %prep
 %setup -q
 %patch0 -p1
+
+cp %{SOURCE1} po/pl.po
+echo 'pl' >> po/LINGUAS
 
 %build
 %{__gettextize}
