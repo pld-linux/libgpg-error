@@ -1,18 +1,18 @@
 Summary:	Library libgpg-error
 Summary(pl):	Biblioteka libgpg-error
 Name:		libgpg-error
-Version:	0.6
-Release:	3
+Version:	0.7
+Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/alpha/libgpg-error/%{name}-%{version}.tar.gz
-# Source0-md5:	516623893401d391b6c346cba543681d
+# Source0-md5:	5340fa28c365049c995996e8dc0f880c
 Source1:	%{name}-pl.po
 Patch0:		%{name}-am18.patch
 URL:		http://www.gnupg.org/
 BuildRequires:	autoconf >= 2.57
-BuildRequires:	automake
-BuildRequires:	gettext-devel >= 0.12.1
+BuildRequires:	automake >= 1.7.6
+BuildRequires:	gettext-devel >= 0.14.1
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
