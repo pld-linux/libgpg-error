@@ -1,0 +1,47 @@
+--- libgpg-error-1.0/po/pl.po.orig	2004-07-30 14:49:19.000000000 +0200
++++ libgpg-error-1.0/po/pl.po	2004-08-19 00:40:06.000000000 +0200
+@@ -4,10 +4,10 @@
+ #
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: libgpg-error 0.8-cvs\n"
++"Project-Id-Version: libgpg-error 1.0\n"
+ "Report-Msgid-Bugs-To: translations@gnupg.org\n"
+ "POT-Creation-Date: 2004-07-30 14:49+0200\n"
+-"PO-Revision-Date: 2004-04-20 21:03+0200\n"
++"PO-Revision-Date: 2004-08-19 00:40+0200\n"
+ "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
+ "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
+ "MIME-Version: 1.0\n"
+@@ -519,9 +519,8 @@
+ msgstr "B³±d karty"
+ 
+ #: src/err-codes.h:137
+-#, fuzzy
+ msgid "Card reset required"
+-msgstr "Reset karty"
++msgstr "Wymagany reset karty"
+ 
+ #: src/err-codes.h:138
+ msgid "Card removed"
+@@ -757,17 +756,15 @@
+ 
+ #: src/err-codes.h:196
+ msgid "Protocol violation"
+-msgstr ""
++msgstr "Naruszenie protoko³u"
+ 
+ #: src/err-codes.h:197
+-#, fuzzy
+ msgid "Invalid MAC"
+-msgstr "Niepoprawne CRL"
++msgstr "Niepoprawny MAC"
+ 
+ #: src/err-codes.h:198
+-#, fuzzy
+ msgid "Invalid request"
+-msgstr "Niepoprawny argument"
++msgstr "Niepoprawne ¿±danie"
+ 
+ #: src/err-codes.h:199
+ msgid "Buffer too short"
