@@ -1,16 +1,16 @@
 Summary:	Library libgpg-error
 Summary(pl):	Biblioteka libgpg-error
 Name:		libgpg-error
-Version:	0.3
+Version:	0.4
 Release:	1
-License:	GPL v2
+License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/alpha/libgpg-error/%{name}-%{version}.tar.gz
-# Source0-md5:	84a5ab3b9efab0c95cd791a628697a73
+# Source0-md5:	55e66bb80bf8ed9bd613bf9c9cea5129
 URL:		http://www.gnupg.org/
-BuildRequires:	autoconf >= 2.52
+BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-devel >= 0.12.1
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -70,7 +70,6 @@ Pakiet zawiera statyczne biblioteki libgpg-error.
 %setup -q
 
 %build
-rm -f missing
 %{__gettextize}
 %{__libtoolize}
 %{__aclocal}
