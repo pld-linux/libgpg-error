@@ -1,18 +1,17 @@
 Summary:	Library libgpg-error
 Summary(pl):	Biblioteka libgpg-error
 Name:		libgpg-error
-Version:	0.7
-Release:	2
+Version:	1.0
+Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	ftp://ftp.gnupg.org/gcrypt/alpha/libgpg-error/%{name}-%{version}.tar.gz
-# Source0-md5:	5340fa28c365049c995996e8dc0f880c
-Source1:	%{name}-pl.po
-Patch0:		%{name}-am18.patch
+Source0:	ftp://ftp.gnupg.org/gcrypt/libgpg-error/%{name}-%{version}.tar.gz
+# Source0-md5:	ff409db977e4a4897aa09ea420a28a2f
+Patch0:		%{name}-pl.po-update.patch
 URL:		http://www.gnupg.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake >= 1.7.6
-BuildRequires:	gettext-devel >= 0.14.1
+BuildRequires:	gettext-devel >= 0.12.1
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,8 +26,8 @@ komponentów GnuPG. S± w¶ród nich GPG, GPGSM, GPGME, GPG-Agent,
 libgcrypt, pinentry, SmartCard Daemon i inne - w przysz³o¶ci.
 
 %package devel
-Summary:	Header files for %{name}
-Summary(pl):	Pliki nag³ówkowe dla %{name}
+Summary:	Header files for libgpg-error
+Summary(pl):	Pliki nag³ówkowe dla libgpg-error
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -49,8 +48,8 @@ Pakiet zawiera pliki nag³ówkowe niezbêdne do kompilowania programów
 u¿ywaj±cych biblioteki libgpg-error.
 
 %package static
-Summary:	Static version of %{name} library
-Summary(pl):	Statyczna wersja biblioteki %{name}
+Summary:	Static version of libgpg-error library
+Summary(pl):	Statyczna wersja biblioteki libgpg-error
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -71,9 +70,6 @@ Pakiet zawiera statyczne biblioteki libgpg-error.
 %prep
 %setup -q
 %patch0 -p1
-
-cp %{SOURCE1} po/pl.po
-echo 'pl' >> po/LINGUAS
 
 rm -f po/stamp-po
 
