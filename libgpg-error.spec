@@ -8,7 +8,7 @@ Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/libgpg-error/%{name}-%{version}.tar.gz
 # Source0-md5:	ee23cdd5fbbb1483676647a8e091ff8e
 Patch0:		%{name}-pl.po-update.patch
-URL:		http://www.gnupg.org/
+URL:		http://www.gnupg.org/related_software/libgpg-error/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake >= 1:1.7.6
 BuildRequires:	gettext-devel >= 0.12.1
