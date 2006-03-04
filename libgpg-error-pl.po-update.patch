@@ -1,15 +1,19 @@
---- libgpg-error-1.0/po/pl.po.orig	2004-07-30 14:49:19.000000000 +0200
-+++ libgpg-error-1.0/po/pl.po	2004-08-19 00:40:06.000000000 +0200
-@@ -4,10 +4,10 @@
+--- libgpg-error-1.2/po/pl.po.orig	2006-03-03 15:32:07.000000000 +0100
++++ libgpg-error-1.2/po/pl.po	2006-03-04 22:44:43.945527000 +0100
+@@ -1,13 +1,13 @@
+ # Polish translation for libgpg-error.
+ # This file is distributed under the same license as the libgpg-error package.
+-# Jakub Bogusz <qboosh@pld-linux.org>, 2004.
++# Jakub Bogusz <qboosh@pld-linux.org>, 2004-2006.
  #
  msgid ""
  msgstr ""
 -"Project-Id-Version: libgpg-error 0.8-cvs\n"
-+"Project-Id-Version: libgpg-error 1.0\n"
++"Project-Id-Version: libgpg-error 1.2\n"
  "Report-Msgid-Bugs-To: translations@gnupg.org\n"
- "POT-Creation-Date: 2004-07-30 14:49+0200\n"
+ "POT-Creation-Date: 2006-03-03 15:32+0100\n"
 -"PO-Revision-Date: 2004-04-20 21:03+0200\n"
-+"PO-Revision-Date: 2004-08-19 00:40+0200\n"
++"PO-Revision-Date: 2006-03-04 22:40+0100\n"
  "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
  "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
  "MIME-Version: 1.0\n"
@@ -24,7 +28,7 @@
  
  #: src/err-codes.h:138
  msgid "Card removed"
-@@ -757,17 +756,15 @@
+@@ -757,32 +756,27 @@
  
  #: src/err-codes.h:196
  msgid "Protocol violation"
@@ -44,4 +48,22 @@
 +msgstr "Niepoprawne ¿±danie"
  
  #: src/err-codes.h:199
+-#, fuzzy
+ msgid "Unknown extension"
+-msgstr "Nieznane S-wyra¿enie"
++msgstr "Nieznane rozszerzenie"
+ 
+ #: src/err-codes.h:200
+-#, fuzzy
+ msgid "Unknown critical extension"
+-msgstr "Nieznane S-wyra¿enie"
++msgstr "Nieznane rozszerzenie krytyczne"
+ 
+ #: src/err-codes.h:201
+-#, fuzzy
+ msgid "Locked"
+-msgstr "Nie zablokowany"
++msgstr "Zablokowany"
+ 
+ #: src/err-codes.h:202
  msgid "Buffer too short"
