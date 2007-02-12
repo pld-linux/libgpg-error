@@ -1,6 +1,6 @@
 # TODO: package lisp files?
 Summary:	Library libgpg-error
-Summary(pl):	Biblioteka libgpg-error
+Summary(pl.UTF-8):   Biblioteka libgpg-error
 Name:		libgpg-error
 Version:	1.5
 Release:	1
@@ -21,14 +21,14 @@ libgpg-error is a library that defines common error values for all
 GnuPG components. Among these are GPG, GPGSM, GPGME, GPG-Agent,
 libgcrypt, pinentry, SmartCard Daemon and possibly more in the future.
 
-%description -l pl
-libgpg-error jest bibliotek± definiuj±c± warto¶ci b³êdów wspólne dla
-komponentów GnuPG. S± w¶ród nich GPG, GPGSM, GPGME, GPG-Agent,
-libgcrypt, pinentry, SmartCard Daemon i inne - w przysz³o¶ci.
+%description -l pl.UTF-8
+libgpg-error jest bibliotekÄ… definiujÄ…cÄ… wartoÅ›ci bÅ‚Ä™dÃ³w wspÃ³lne dla
+komponentÃ³w GnuPG. SÄ… wÅ›rÃ³d nich GPG, GPGSM, GPGME, GPG-Agent,
+libgcrypt, pinentry, SmartCard Daemon i inne - w przyszÅ‚oÅ›ci.
 
 %package devel
 Summary:	Header files for libgpg-error
-Summary(pl):	Pliki nag³ówkowe dla libgpg-error
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe dla libgpg-error
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -40,17 +40,17 @@ libgcrypt, pinentry, SmartCard Daemon and possibly more in the future.
 This package contains the header files needed to develop programs that
 use these libgpg-error.
 
-%description devel -l pl
-libgpg-error jest bibliotek± definiuj±c± warto¶ci b³êdów wspólne dla
-komponentów GnuPG. S± w¶ród nich GPG, GPGSM, GPGME, GPG-Agent,
-libgcrypt, pinentry, SmartCard Daemon i inne - w przysz³o¶ci.
+%description devel -l pl.UTF-8
+libgpg-error jest bibliotekÄ… definiujÄ…cÄ… wartoÅ›ci bÅ‚Ä™dÃ³w wspÃ³lne dla
+komponentÃ³w GnuPG. SÄ… wÅ›rÃ³d nich GPG, GPGSM, GPGME, GPG-Agent,
+libgcrypt, pinentry, SmartCard Daemon i inne - w przyszÅ‚oÅ›ci.
 
-Pakiet zawiera pliki nag³ówkowe niezbêdne do kompilowania programów
-u¿ywaj±cych biblioteki libgpg-error.
+Pakiet zawiera pliki nagÅ‚Ã³wkowe niezbÄ™dne do kompilowania programÃ³w
+uÅ¼ywajÄ…cych biblioteki libgpg-error.
 
 %package static
 Summary:	Static version of libgpg-error library
-Summary(pl):	Statyczna wersja biblioteki libgpg-error
+Summary(pl.UTF-8):   Statyczna wersja biblioteki libgpg-error
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -61,10 +61,10 @@ libgcrypt, pinentry, SmartCard Daemon and possibly more in the future.
 
 This package contains the static libgpg-error libraries.
 
-%description static -l pl
-libgpg-error jest bibliotek± definiuj±c± warto¶ci b³êdów wspólne dla
-komponentów GnuPG. S± w¶ród nich GPG, GPGSM, GPGME, GPG-Agent,
-libgcrypt, pinentry, SmartCard Daemon i inne - w przysz³o¶ci.
+%description static -l pl.UTF-8
+libgpg-error jest bibliotekÄ… definiujÄ…cÄ… wartoÅ›ci bÅ‚Ä™dÃ³w wspÃ³lne dla
+komponentÃ³w GnuPG. SÄ… wÅ›rÃ³d nich GPG, GPGSM, GPGME, GPG-Agent,
+libgcrypt, pinentry, SmartCard Daemon i inne - w przyszÅ‚oÅ›ci.
 
 Pakiet zawiera statyczne biblioteki libgpg-error.
 
