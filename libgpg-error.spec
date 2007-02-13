@@ -9,6 +9,7 @@ Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/libgpg-error/%{name}-%{version}.tar.bz2
 # Source0-md5:	8599b96c911b1df1be24a6ff4ec3c364
 Patch0:		%{name}-pl.po-update.patch
+Patch1:		%{name}-gpg_error_config.patch
 URL:		http://www.gnupg.org/related_software/libgpg-error/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9.6
@@ -71,6 +72,7 @@ Pakiet zawiera statyczne biblioteki libgpg-error.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 rm -f po/stamp-po
 
