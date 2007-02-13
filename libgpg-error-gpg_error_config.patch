@@ -1,0 +1,12 @@
+--- libgpg-error-1.5/src/gpg-error-config.in.orig	2007-02-13 12:40:54.000000000 +0100
++++ libgpg-error-1.5/src/gpg-error-config.in	2007-02-13 12:41:07.000000000 +0100
+@@ -62,9 +62,6 @@
+ 	    fi
+ 	    ;;
+ 	--libs)
+-	    if test "x$libdir" != "x/usr/lib" -a "x$libdir" != "x/lib"; then
+-		output="$output -L$libdir"
+-	    fi
+ 	    output="$output -lgpg-error"
+ 	    ;;
+ 	*)
