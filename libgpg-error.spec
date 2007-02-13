@@ -1,6 +1,6 @@
 # TODO: package lisp files?
 Summary:	Library libgpg-error
-Summary(pl.UTF-8):   Biblioteka libgpg-error
+Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
 Version:	1.5
 Release:	1
@@ -28,7 +28,7 @@ libgcrypt, pinentry, SmartCard Daemon i inne - w przyszłości.
 
 %package devel
 Summary:	Header files for libgpg-error
-Summary(pl.UTF-8):   Pliki nagłówkowe dla libgpg-error
+Summary(pl.UTF-8):	Pliki nagłówkowe dla libgpg-error
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -50,7 +50,7 @@ używających biblioteki libgpg-error.
 
 %package static
 Summary:	Static version of libgpg-error library
-Summary(pl.UTF-8):   Statyczna wersja biblioteki libgpg-error
+Summary(pl.UTF-8):	Statyczna wersja biblioteki libgpg-error
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
