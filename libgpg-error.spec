@@ -1,4 +1,7 @@
 # TODO: package lisp files?
+# Conditional build:
+%bcond_without	static_libs	# don't build static library
+#
 Summary:	Library libgpg-error
 Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
@@ -82,8 +85,8 @@ rm -f po/stamp-po
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
-
+%configure \
+	%{!?with_static_libs:--disable-static}
 %{__make}
 
 %install
@@ -119,9 +122,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/*.h
 %{_aclocaldir}/*.m4
 
+%if %{with static_libs}
 %files static
 %defattr(644,root,root,755)
 %{_libdir}/libgpg-error.a
+%endif
 
 #%files... lisp or -n lisp-%{name} ???
 #%defattr(644,root,root,755)
