@@ -1,16 +1,17 @@
 # TODO: package lisp files?
+#
 # Conditional build:
 %bcond_without	static_libs	# don't build static library
 #
 Summary:	Library libgpg-error
 Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
-Version:	1.5
+Version:	1.6
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/libgpg-error/%{name}-%{version}.tar.bz2
-# Source0-md5:	8599b96c911b1df1be24a6ff4ec3c364
+# Source0-md5:	f3e9870e213518b407a959f8d29cd554
 Patch0:		%{name}-pl.po-update.patch
 Patch1:		%{name}-gpg_error_config.patch
 URL:		http://www.gnupg.org/related_software/libgpg-error/
@@ -119,8 +120,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/gpg-error-config
 %attr(755,root,root) %{_libdir}/libgpg-error.so
 %{_libdir}/libgpg-error.la
-%{_includedir}/*.h
-%{_aclocaldir}/*.m4
+%{_includedir}/gpg-error.h
+%{_aclocaldir}/gpg-error.m4
 
 %if %{with static_libs}
 %files static
