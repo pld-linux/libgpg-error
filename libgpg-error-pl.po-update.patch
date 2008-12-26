@@ -1,20 +1,20 @@
---- libgpg-error-1.6/po/pl.po.orig	2007-10-29 14:13:52.000000000 +0100
-+++ libgpg-error-1.6/po/pl.po	2007-11-01 00:09:55.627053575 +0100
+--- libgpg-error-1.7/po/pl.po.orig	2008-11-12 14:44:29.000000000 +0100
++++ libgpg-error-1.7/po/pl.po	2008-12-26 17:00:52.066516344 +0100
 @@ -1,14 +1,14 @@
  # Polish translation for libgpg-error.
  # Copyright (C) 2004, 2005, 2006 Free Software Foundation, Inc.
  # This file is distributed under the same license as the libgpg-error package.
 -# Jakub Bogusz <qboosh@pld-linux.org>, 2004-2006.
-+# Jakub Bogusz <qboosh@pld-linux.org>, 2004-2007.
++# Jakub Bogusz <qboosh@pld-linux.org>, 2004-2008.
  #
  msgid ""
  msgstr ""
 -"Project-Id-Version: libgpg-error 1.4\n"
-+"Project-Id-Version: libgpg-error 1.6\n"
++"Project-Id-Version: libgpg-error 1.7\n"
  "Report-Msgid-Bugs-To: translations@gnupg.org\n"
- "POT-Creation-Date: 2007-10-29 12:46+0100\n"
+ "POT-Creation-Date: 2008-11-12 14:44+0100\n"
 -"PO-Revision-Date: 2006-09-15 19:30+0200\n"
-+"PO-Revision-Date: 2007-10-31 23:59+0100\n"
++"PO-Revision-Date: 2008-12-26 16:59+0100\n"
  "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
  "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
  "MIME-Version: 1.0\n"
@@ -32,14 +32,31 @@
  
  #: src/err-sources.h:42
  msgid "Any source"
-@@ -800,9 +800,8 @@
+@@ -800,23 +800,20 @@
  msgstr "Nieznane polecenie"
  
  #: src/err-codes.h:204
+-#, fuzzy
+ msgid "Not operational"
+-msgstr "Nieobs³ugiwana operacja"
++msgstr "Nie gotowy"
+ 
+ #: src/err-codes.h:205
+-#, fuzzy
+ msgid "No passphrase given"
+-msgstr "B³êdne has³o"
++msgstr "Nie podano has³a"
+ 
+ #: src/err-codes.h:206
+ msgid "No PIN given"
+-msgstr ""
++msgstr "Nie podano PIN-u"
+ 
+ #: src/err-codes.h:207
 -#, fuzzy
  msgid "Operation not yet finished"
 -msgstr "Operacja anulowana"
 +msgstr "Operacja jeszcze niezakoñczona"
  
- #: src/err-codes.h:205
+ #: src/err-codes.h:208
  msgid "Buffer too short"
