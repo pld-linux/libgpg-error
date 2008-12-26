@@ -6,12 +6,12 @@
 Summary:	Library libgpg-error
 Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
-Version:	1.6
+Version:	1.7
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/libgpg-error/%{name}-%{version}.tar.bz2
-# Source0-md5:	f3e9870e213518b407a959f8d29cd554
+# Source0-md5:	62c0d09d1e76c5b6da8fff92314c4665
 Patch0:		%{name}-pl.po-update.patch
 Patch1:		%{name}-gpg_error_config.patch
 URL:		http://www.gnupg.org/related_software/libgpg-error/
@@ -97,8 +97,8 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT/%{_lib}
-mv -f $RPM_BUILD_ROOT%{_libdir}/libgpg-error.so.*.*.* $RPM_BUILD_ROOT/%{_lib}
-ln -sf /%{_lib}/$(cd $RPM_BUILD_ROOT/%{_lib}; echo libgpg-error.so.*.*.*) \
+mv -f $RPM_BUILD_ROOT%{_libdir}/libgpg-error.so.* $RPM_BUILD_ROOT/%{_lib}
+ln -sf /%{_lib}/$(basename $RPM_BUILD_ROOT/%{_lib}/libgpg-error.so.*.*.*) \
 	$RPM_BUILD_ROOT%{_libdir}/libgpg-error.so
 
 %find_lang %{name}
@@ -114,6 +114,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog NEWS AUTHORS
 %attr(755,root,root) %{_bindir}/gpg-error
 %attr(755,root,root) /%{_lib}/libgpg-error.so.*.*.*
+%attr(755,root,root) %ghost /%{_lib}/libgpg-error.so.0
 
 %files devel
 %defattr(644,root,root,755)
