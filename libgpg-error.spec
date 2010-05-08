@@ -6,19 +6,19 @@
 Summary:	Library libgpg-error
 Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
-Version:	1.7
+Version:	1.8
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/libgpg-error/%{name}-%{version}.tar.bz2
-# Source0-md5:	62c0d09d1e76c5b6da8fff92314c4665
+# Source0-md5:	1d2005268a2f096db28cf9cf77b3229a
 Patch0:		%{name}-pl.po-update.patch
 Patch1:		%{name}-gpg_error_config.patch
 URL:		http://www.gnupg.org/related_software/libgpg-error/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9.6
 BuildRequires:	gettext-devel >= 0.15
-BuildRequires:	libtool
+BuildRequires:	libtool >= 2:2.2.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -83,11 +83,11 @@ rm -f po/stamp-po
 %build
 %{__gettextize}
 %{__libtoolize}
-%{__aclocal}
+%{__aclocal} -I m4
 %{__autoconf}
 %{__automake}
 %configure \
-	%{!?with_static_libs:--disable-static}
+	%{?with_static_libs:--enable-static}
 %{__make}
 
 %install
