@@ -1,5 +1,5 @@
---- libgpg-error-1.11/po/pl.po.orig	2013-03-01 21:52:39.875396753 +0100
-+++ libgpg-error-1.11/po/pl.po	2013-03-01 22:00:27.755377118 +0100
+--- libgpg-error-1.12/po/pl.po.orig	2013-06-24 06:43:15.000000000 +0200
++++ libgpg-error-1.12/po/pl.po	2013-06-25 18:28:40.401675547 +0200
 @@ -1,14 +1,14 @@
  # Polish translation for libgpg-error.
  # Copyright (C) 2004, 2005, 2006 Free Software Foundation, Inc.
@@ -10,11 +10,11 @@
  msgid ""
  msgstr ""
 -"Project-Id-Version: libgpg-error 1.9\n"
-+"Project-Id-Version: libgpg-error 1.11\n"
++"Project-Id-Version: libgpg-error 1.12\n"
  "Report-Msgid-Bugs-To: translations@gnupg.org\n"
- "POT-Creation-Date: 2013-02-25 10:18+0100\n"
+ "POT-Creation-Date: 2013-06-24 06:32+0200\n"
 -"PO-Revision-Date: 2013-02-23 20:09+0100\n"
-+"PO-Revision-Date: 2013-03-01 21:54+0100\n"
++"PO-Revision-Date: 2013-06-25 18:22+0200\n"
  "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
  "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
  "Language: pl\n"
@@ -30,7 +30,7 @@
  
  #: src/err-codes.h:107
  msgid "Invalid data"
-@@ -843,45 +841,36 @@
+@@ -843,79 +841,60 @@
  msgstr "Osi±gniêto limit"
  
  #: src/err-codes.h:212
@@ -43,7 +43,7 @@
 -#, fuzzy
  msgid "Missing issuer certificate"
 -msgstr "Brakuj±cy certyfikat"
-+msgstr "Brakuj±cy certyfikat wystawcy"
++msgstr "Brak certyfikatu wystawcy"
  
  #: src/err-codes.h:214
  msgid "No keyserver available"
@@ -54,7 +54,7 @@
 -#, fuzzy
  msgid "Invalid elliptic curve"
 -msgstr "Niepoprawny czas"
-+msgstr "b³êdna krzywa eliptyczna"
++msgstr "B³êdna krzywa eliptyczna"
  
  #: src/err-codes.h:216
 -#, fuzzy
@@ -78,9 +78,49 @@
  
  #: src/err-codes.h:219
 -#, fuzzy
+-#| msgid "No crypto engine"
+ msgid "No crypto context"
+-msgstr "Brak silnika kryptograficznego"
++msgstr "Brak kontekstu kryptograficznego"
+ 
+ #: src/err-codes.h:220
+-#, fuzzy
+-#| msgid "No crypto engine"
+ msgid "Wrong crypto context"
+-msgstr "Brak silnika kryptograficznego"
++msgstr "Niew³a¶ciwy kontekst kryptograficzny"
+ 
+ #: src/err-codes.h:221
+-#, fuzzy
+-#| msgid "Invalid crypto engine"
+ msgid "Bad crypto context"
+-msgstr "Niepoprawny silnik kryptograficzny"
++msgstr "B³êdny kontekst kryptograficzny"
+ 
+ #: src/err-codes.h:222
+ msgid "Conflict in the crypto context"
+-msgstr ""
++msgstr "Konflikt w kontek¶cie kryptograficznym"
+ 
+ #: src/err-codes.h:223
+-#, fuzzy
+-#| msgid "No public key"
+ msgid "Broken public key"
+-msgstr "Brak klucza publicznego"
++msgstr "Uszkodzony klucz publiczny"
+ 
+ #: src/err-codes.h:224
+-#, fuzzy
+-#| msgid "No secret key"
+ msgid "Broken secret key"
+-msgstr "Brak klucza tajnego"
++msgstr "Uszkodzony klucz tajny"
+ 
+ #: src/err-codes.h:225
+-#, fuzzy
  msgid "Operation fully cancelled"
 -msgstr "Operacja anulowana"
 +msgstr "Operacja ca³kowicie anulowana"
  
- #: src/err-codes.h:220
+ #: src/err-codes.h:226
  msgid "Operation not yet finished"
