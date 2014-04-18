@@ -1,126 +1,48 @@
---- libgpg-error-1.12/po/pl.po.orig	2013-06-24 06:43:15.000000000 +0200
-+++ libgpg-error-1.12/po/pl.po	2013-06-25 18:28:40.401675547 +0200
+--- libgpg-error-1.13/po/pl.po.orig	2014-04-18 21:44:18.247123866 +0200
++++ libgpg-error-1.13/po/pl.po	2014-04-18 22:00:06.530437435 +0200
 @@ -1,14 +1,14 @@
  # Polish translation for libgpg-error.
  # Copyright (C) 2004, 2005, 2006 Free Software Foundation, Inc.
  # This file is distributed under the same license as the libgpg-error package.
--# Jakub Bogusz <qboosh@pld-linux.org>, 2004-2010.
-+# Jakub Bogusz <qboosh@pld-linux.org>, 2004-2013.
+-# Jakub Bogusz <qboosh@pld-linux.org>, 2004-2013.
++# Jakub Bogusz <qboosh@pld-linux.org>, 2004-2014.
  #
  msgid ""
  msgstr ""
--"Project-Id-Version: libgpg-error 1.9\n"
-+"Project-Id-Version: libgpg-error 1.12\n"
+-"Project-Id-Version: libgpg-error 1.12\n"
++"Project-Id-Version: libgpg-error 1.13\n"
  "Report-Msgid-Bugs-To: translations@gnupg.org\n"
- "POT-Creation-Date: 2013-06-24 06:32+0200\n"
--"PO-Revision-Date: 2013-02-23 20:09+0100\n"
-+"PO-Revision-Date: 2013-06-25 18:22+0200\n"
+ "POT-Creation-Date: 2014-04-15 14:26+0200\n"
+-"PO-Revision-Date: 2013-06-25 18:22+0200\n"
++"PO-Revision-Date: 2014-04-18 21:58+0200\n"
  "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
  "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
  "Language: pl\n"
-@@ -417,10 +417,8 @@
- msgstr "Agent nie uruchomiony"
- 
- #: src/err-codes.h:106
--#, fuzzy
--#| msgid "agent error"
- msgid "Agent error"
--msgstr "b³±d agenta"
-+msgstr "B³±d agenta"
- 
- #: src/err-codes.h:107
- msgid "Invalid data"
-@@ -843,79 +841,60 @@
- msgstr "Osi±gniêto limit"
- 
- #: src/err-codes.h:212
--#, fuzzy
- msgid "Not initialized"
--msgstr "Karta nie zainicjowana"
-+msgstr "Nie zainicjowano"
- 
- #: src/err-codes.h:213
--#, fuzzy
- msgid "Missing issuer certificate"
--msgstr "Brakuj±cy certyfikat"
-+msgstr "Brak certyfikatu wystawcy"
- 
- #: src/err-codes.h:214
- msgid "No keyserver available"
--msgstr ""
-+msgstr "Brak dostêpnego serwera kluczy"
- 
- #: src/err-codes.h:215
--#, fuzzy
- msgid "Invalid elliptic curve"
--msgstr "Niepoprawny czas"
-+msgstr "B³êdna krzywa eliptyczna"
- 
- #: src/err-codes.h:216
--#, fuzzy
- msgid "Unknown elliptic curve"
--msgstr "Nieznane ¼ród³o"
-+msgstr "Nieznana krzywa eliptyczna"
- 
- #: src/err-codes.h:217
--#, fuzzy
--#| msgid "Duplicated value"
- msgid "Duplicated key"
--msgstr "Powtórzona warto¶æ"
-+msgstr "Powtórzony klucz"
- 
- #: src/err-codes.h:218
--#, fuzzy
--#| msgid "Ambiguous name"
- msgid "Ambiguous result"
--msgstr "Niejednoznaczna nazwa"
-+msgstr "Niejednoznaczny wynik"
- 
- #: src/err-codes.h:219
--#, fuzzy
--#| msgid "No crypto engine"
- msgid "No crypto context"
--msgstr "Brak silnika kryptograficznego"
-+msgstr "Brak kontekstu kryptograficznego"
- 
- #: src/err-codes.h:220
--#, fuzzy
--#| msgid "No crypto engine"
- msgid "Wrong crypto context"
--msgstr "Brak silnika kryptograficznego"
-+msgstr "Niew³a¶ciwy kontekst kryptograficzny"
- 
- #: src/err-codes.h:221
--#, fuzzy
--#| msgid "Invalid crypto engine"
- msgid "Bad crypto context"
--msgstr "Niepoprawny silnik kryptograficzny"
-+msgstr "B³êdny kontekst kryptograficzny"
- 
- #: src/err-codes.h:222
- msgid "Conflict in the crypto context"
--msgstr ""
-+msgstr "Konflikt w kontek¶cie kryptograficznym"
- 
- #: src/err-codes.h:223
--#, fuzzy
--#| msgid "No public key"
- msgid "Broken public key"
--msgstr "Brak klucza publicznego"
-+msgstr "Uszkodzony klucz publiczny"
- 
- #: src/err-codes.h:224
--#, fuzzy
--#| msgid "No secret key"
- msgid "Broken secret key"
--msgstr "Brak klucza tajnego"
-+msgstr "Uszkodzony klucz tajny"
+@@ -893,10 +893,8 @@
+ msgstr "Uszkodzony klucz tajny"
  
  #: src/err-codes.h:225
 -#, fuzzy
- msgid "Operation fully cancelled"
--msgstr "Operacja anulowana"
-+msgstr "Operacja ca³kowicie anulowana"
+-#| msgid "Invalid digest algorithm"
+ msgid "Invalid MAC algorithm"
+-msgstr "Niepoprawny algorytm skrÃ³tu"
++msgstr "Niepoprawny algorytm MAC"
  
  #: src/err-codes.h:226
- msgid "Operation not yet finished"
+ msgid "Operation fully cancelled"
+@@ -964,13 +962,11 @@
+ 
+ #: src/err-codes.h:242
+ msgid "Not possible with a card based key"
+-msgstr ""
++msgstr "NiemoÅ¼liwe z kluczem opartym na karcie"
+ 
+ #: src/err-codes.h:243
+-#, fuzzy
+-#| msgid "Invalid object"
+ msgid "Invalid lock object"
+-msgstr "Niepoprawny obiekt"
++msgstr "Niepoprawny obiekt blokady"
+ 
+ #: src/err-codes.h:244
+ msgid "General IPC error"
