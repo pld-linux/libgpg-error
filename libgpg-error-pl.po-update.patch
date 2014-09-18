@@ -1,23 +1,5 @@
---- libgpg-error-1.13/po/pl.po.orig	2014-04-18 21:44:18.247123866 +0200
-+++ libgpg-error-1.13/po/pl.po	2014-04-18 22:00:06.530437435 +0200
-@@ -1,14 +1,14 @@
- # Polish translation for libgpg-error.
- # Copyright (C) 2004, 2005, 2006 Free Software Foundation, Inc.
- # This file is distributed under the same license as the libgpg-error package.
--# Jakub Bogusz <qboosh@pld-linux.org>, 2004-2013.
-+# Jakub Bogusz <qboosh@pld-linux.org>, 2004-2014.
- #
- msgid ""
- msgstr ""
--"Project-Id-Version: libgpg-error 1.12\n"
-+"Project-Id-Version: libgpg-error 1.13\n"
- "Report-Msgid-Bugs-To: translations@gnupg.org\n"
- "POT-Creation-Date: 2014-04-15 14:26+0200\n"
--"PO-Revision-Date: 2013-06-25 18:22+0200\n"
-+"PO-Revision-Date: 2014-04-18 21:58+0200\n"
- "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
- "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
- "Language: pl\n"
+--- libgpg-error-1.16/po/pl.po.orig	2014-09-18 13:15:37.000000000 +0200
++++ libgpg-error-1.16/po/pl.po	2014-09-18 21:11:04.405384776 +0200
 @@ -893,10 +893,8 @@
  msgstr "Uszkodzony klucz tajny"
  
@@ -30,19 +12,27 @@
  
  #: src/err-codes.h:226
  msgid "Operation fully cancelled"
-@@ -964,13 +962,11 @@
+@@ -963,20 +961,16 @@
+ msgstr "Błędny znak ósemkowy w S-wyrażeniu"
  
  #: src/err-codes.h:242
+-#, fuzzy
+-#| msgid "Key expired"
+ msgid "Key disabled"
+-msgstr "Klucz wygasł"
++msgstr "Klucz dezaktywowany"
+ 
+ #: src/err-codes.h:243
  msgid "Not possible with a card based key"
 -msgstr ""
 +msgstr "Niemożliwe z kluczem opartym na karcie"
  
- #: src/err-codes.h:243
+ #: src/err-codes.h:244
 -#, fuzzy
 -#| msgid "Invalid object"
  msgid "Invalid lock object"
 -msgstr "Niepoprawny obiekt"
 +msgstr "Niepoprawny obiekt blokady"
  
- #: src/err-codes.h:244
+ #: src/err-codes.h:245
  msgid "General IPC error"
