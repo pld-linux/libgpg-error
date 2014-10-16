@@ -1,4 +1,8 @@
 # TODO: package lisp files?
+#	%{_datadir}/common-lisp/source/gpg-error/gpg-error-codes.lisp
+#	%{_datadir}/common-lisp/source/gpg-error/gpg-error-package.lisp
+#	%{_datadir}/common-lisp/source/gpg-error/gpg-error.asd
+#	%{_datadir}/common-lisp/source/gpg-error/gpg-error.lisp
 #
 # Conditional build:
 %bcond_without	static_libs	# don't build static library
@@ -6,18 +10,20 @@
 Summary:	Library libgpg-error
 Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
-Version:	1.16
+Version:	1.17
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/libgpg-error/%{name}-%{version}.tar.bz2
-# Source0-md5:	ec7f82d92329a535a89b06142e625f8c
+# Source0-md5:	b4f8d8b9ff14aed41f279aa844563539
 Patch0:		%{name}-pl.po-update.patch
+Patch1:		%{name}-info.patch
 URL:		http://www.gnupg.org/related_software/libgpg-error/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.11
 BuildRequires:	gettext-devel >= 0.17
 BuildRequires:	libtool >= 2:2.2.6
+BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -75,6 +81,7 @@ Pakiet zawiera statyczne biblioteki libgpg-error.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %{__rm} po/stamp-po
 
@@ -121,6 +128,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/libgpg-error.la
 %{_includedir}/gpg-error.h
 %{_aclocaldir}/gpg-error.m4
+%{_mandir}/man1/gpg-error-config.1*
+%{_infodir}/gpgrt.info*
 
 %if %{with static_libs}
 %files static

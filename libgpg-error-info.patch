@@ -1,0 +1,14 @@
+--- libgpg-error-1.17/doc/gpgrt.texi.orig	2014-10-15 15:00:02.000000000 +0200
++++ libgpg-error-1.17/doc/gpgrt.texi	2014-10-16 21:30:22.625042334 +0200
+@@ -24,9 +24,9 @@
+ @end quotation
+ @end copying
+ 
+-@dircategory Libraries
++@dircategory Libraries:
+ @direntry
+-* libgpg-error: (gnupg).   Error codes and common code for GnuPG.
++* libgpg-error: (gnupg).		Error codes and common code for GnuPG
+ @end direntry
+ 
+ @c A couple of macros with no effect on texinfo
