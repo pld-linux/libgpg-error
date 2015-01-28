@@ -1,194 +1,39 @@
---- libgpg-error-1.17/po/pl.po.orig	2014-10-15 15:18:05.000000000 +0200
-+++ libgpg-error-1.17/po/pl.po	2014-10-16 21:18:00.961740149 +0200
-@@ -82,7 +82,7 @@
- 
- #: src/err-sources.h:44
- msgid "TLS"
--msgstr ""
-+msgstr "TLS"
- 
- #: src/err-sources.h:45
- msgid "Any source"
-@@ -897,10 +897,8 @@
- msgstr "Uszkodzony klucz tajny"
- 
- #: src/err-codes.h:225
--#, fuzzy
--#| msgid "Invalid digest algorithm"
- msgid "Invalid MAC algorithm"
--msgstr "Niepoprawny algorytm skrótu"
-+msgstr "Niepoprawny algorytm MAC"
- 
- #: src/err-codes.h:226
- msgid "Operation fully cancelled"
-@@ -967,142 +965,116 @@
- msgstr "Błędny znak ósemkowy w S-wyrażeniu"
+--- libgpg-error-1.18/po/pl.po.orig	2015-01-28 21:12:48.213647150 +0100
++++ libgpg-error-1.18/po/pl.po	2015-01-28 21:14:58.436975018 +0100
+@@ -966,23 +966,19 @@
  
  #: src/err-codes.h:242
--#, fuzzy
--#| msgid "Bad certificate chain"
- msgid "No certificate chain"
--msgstr "Błędny łańcuch certyfikatów"
-+msgstr "Brak łańcucha certyfikatów"
+ msgid "Legacy key"
+-msgstr ""
++msgstr "Stary typ klucza"
  
  #: src/err-codes.h:243
 -#, fuzzy
--#| msgid "Certificate too young"
- msgid "Certificate is too large"
--msgstr "Certyfikat zbyt młody"
-+msgstr "Certyfikat jest zbyt duży"
+-#| msgid "Buffer too short"
+ msgid "Request too short"
+-msgstr "Bufor zbyt mały"
++msgstr "Żądanie za krótkie"
  
  #: src/err-codes.h:244
 -#, fuzzy
--#| msgid "Invalid card"
- msgid "Invalid record"
--msgstr "Niepoprawna karta"
-+msgstr "Niepoprawny rekord"
+-#| msgid "Line too long"
+ msgid "Request too long"
+-msgstr "Linia zbyt długa"
++msgstr "Żądanie za długie"
  
  #: src/err-codes.h:245
- msgid "The MAC does not verify"
+ msgid "Object is in termination state"
 -msgstr ""
-+msgstr "Niepomyślna weryfikacja MAC"
++msgstr "Obiekt jest w stanie końcowym"
  
  #: src/err-codes.h:246
--#, fuzzy
--#| msgid "Unexpected tag"
- msgid "Unexpected message"
--msgstr "Nieoczekiwany znacznik"
-+msgstr "Nieoczekiwany komunikat"
+ msgid "No certificate chain"
+@@ -1086,7 +1082,7 @@
  
- #: src/err-codes.h:247
- msgid "Compression or decompression failed"
+ #: src/err-codes.h:271
+ msgid "Forbidden"
 -msgstr ""
-+msgstr "Kompresja lub dekompresja nie powiodła się"
++msgstr "Zabronione"
  
- #: src/err-codes.h:248
- msgid "A counter would wrap"
--msgstr ""
-+msgstr "Licznik by się przekręcił"
- 
- #: src/err-codes.h:249
- msgid "Fatal alert message received"
--msgstr ""
-+msgstr "Otrzymano komunikat alarmu krytycznego"
- 
- #: src/err-codes.h:250
--#, fuzzy
--#| msgid "Invalid cipher algorithm"
- msgid "No cipher algorithm"
--msgstr "Niepoprawny algorytm szyfru"
-+msgstr "Brak algorytmu szyfru"
- 
- #: src/err-codes.h:251
--#, fuzzy
--#| msgid "Missing issuer certificate"
- msgid "Missing client certificate"
--msgstr "Brak certyfikatu wystawcy"
-+msgstr "Brak certyfikatu klienta"
- 
- #: src/err-codes.h:252
--#, fuzzy
--#| msgid "Certificate revoked"
- msgid "Close notification received"
--msgstr "Certyfikat anulowany"
-+msgstr "Otrzymano powiadomienie o zamknięciu"
- 
- #: src/err-codes.h:253
--#, fuzzy
--#| msgid "Key expired"
- msgid "Ticket expired"
--msgstr "Klucz wygasł"
-+msgstr "Bilet wygasł"
- 
- #: src/err-codes.h:254
--#, fuzzy
--#| msgid "Bad public key"
- msgid "Bad ticket"
--msgstr "Błędny klucz publiczny"
-+msgstr "Błędny bilet"
- 
- #: src/err-codes.h:255
--#, fuzzy
--#| msgid "Unknown packet"
- msgid "Unknown identity"
--msgstr "Nieznany pakiet"
-+msgstr "Nieznana tożsamość"
- 
- #: src/err-codes.h:256
--#, fuzzy
--#| msgid "Bad certificate chain"
- msgid "Bad certificate message in handshake"
--msgstr "Błędny łańcuch certyfikatów"
-+msgstr "Błędny komunikat certyfikatu przy powitaniu"
- 
- #: src/err-codes.h:257
- msgid "Bad certificate request message in handshake"
--msgstr ""
-+msgstr "Błędny komunikat żądania certyfikatu przy powitaniu"
- 
- #: src/err-codes.h:258
- msgid "Bad certificate verify message in handshake"
--msgstr ""
-+msgstr "Błędny komunikat weryfikacji certyfikatu przy powitaniu"
- 
- #: src/err-codes.h:259
- msgid "Bad change cipher messsage in handshake"
--msgstr ""
-+msgstr "Błędny komunikat zmiany szyfru przy powitaniu"
- 
- #: src/err-codes.h:260
- msgid "Bad client hello message in handshake"
--msgstr ""
-+msgstr "Błędny komunikat przywitania klienta w powitaniu"
- 
- #: src/err-codes.h:261
- msgid "Bad server hello message in handshake"
--msgstr ""
-+msgstr "Błędny komunikat przywitania serwera w powitaniu"
- 
- #: src/err-codes.h:262
- msgid "Bad server hello done message in hanshake"
--msgstr ""
-+msgstr "Błędny komunikat zakończenia przywitania serwera w powitaniu"
- 
- #: src/err-codes.h:263
- msgid "Bad finished message in handshake"
--msgstr ""
-+msgstr "Błędny komunikat zakończenia w powitaniu"
- 
- #: src/err-codes.h:264
- msgid "Bad server key exchange message in handshake"
--msgstr ""
-+msgstr "Błędny komunikat wymiany klucza serwera w powitaniu"
- 
- #: src/err-codes.h:265
- msgid "Bad client key exchange message in handshake"
--msgstr ""
-+msgstr "Błędny komunikat wymiany klucza klienta w powitaniu"
- 
- #: src/err-codes.h:266
- msgid "Bogus string"
--msgstr ""
-+msgstr "Fałszywy łańcuch"
- 
- #: src/err-codes.h:267
--#, fuzzy
--#| msgid "Key expired"
+ #: src/err-codes.h:272
  msgid "Key disabled"
--msgstr "Klucz wygasł"
-+msgstr "Klucz dezaktywowany"
- 
- #: src/err-codes.h:268
- msgid "Not possible with a card based key"
--msgstr ""
-+msgstr "Niemożliwe przy użyciu klucza opartego na karcie"
- 
- #: src/err-codes.h:269
--#, fuzzy
--#| msgid "Invalid object"
- msgid "Invalid lock object"
--msgstr "Niepoprawny obiekt"
-+msgstr "Niepoprawny obiekt blokady"
- 
- #: src/err-codes.h:270
- msgid "General IPC error"
