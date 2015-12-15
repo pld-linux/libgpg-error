@@ -10,12 +10,12 @@
 Summary:	Library libgpg-error
 Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
-Version:	1.20
+Version:	1.21
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/libgpg-error/%{name}-%{version}.tar.bz2
-# Source0-md5:	9997d9203b672402a04760176811589d
+# Source0-md5:	ab0b5aba6d0a185b41d07bda804fd8b2
 Patch0:		%{name}-pl.po-update.patch
 Patch1:		%{name}-info.patch
 URL:		http://www.gnupg.org/related_software/libgpg-error/

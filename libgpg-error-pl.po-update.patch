@@ -1,563 +1,596 @@
---- libgpg-error-1.19/po/pl.po.orig	2015-04-10 19:02:51.000000000 +0200
-+++ libgpg-error-1.19/po/pl.po	2015-04-18 21:33:27.847105765 +0200
-@@ -966,23 +966,19 @@
+--- libgpg-error-1.21/po/pl.po.orig	2015-12-12 13:02:37.000000000 +0100
++++ libgpg-error-1.21/po/pl.po	2015-12-13 17:11:33.547301282 +0100
+@@ -966,39 +966,31 @@
  
  #: src/err-codes.h:242
+ msgid "Server indicated a failure"
+-msgstr ""
++msgstr "Serwer wskazał niepowodzenie"
+ 
+ #: src/err-codes.h:243
+-#, fuzzy
+-#| msgid "Unknown name"
+ msgid "No name"
+-msgstr "Nieznana nazwa"
++msgstr "Brak nazwy"
+ 
+ #: src/err-codes.h:244
+-#, fuzzy
+-#| msgid "No public key"
+ msgid "No key"
+-msgstr "Brak klucza publicznego"
++msgstr "Brak klucza"
+ 
+ #: src/err-codes.h:245
  msgid "Legacy key"
 -msgstr ""
 +msgstr "Stary typ klucza"
  
- #: src/err-codes.h:243
+ #: src/err-codes.h:246
 -#, fuzzy
 -#| msgid "Buffer too short"
  msgid "Request too short"
 -msgstr "Bufor zbyt mały"
 +msgstr "Żądanie za krótkie"
  
- #: src/err-codes.h:244
+ #: src/err-codes.h:247
 -#, fuzzy
 -#| msgid "Line too long"
  msgid "Request too long"
 -msgstr "Linia zbyt długa"
 +msgstr "Żądanie za długie"
  
- #: src/err-codes.h:245
+ #: src/err-codes.h:248
  msgid "Object is in termination state"
 -msgstr ""
 +msgstr "Obiekt jest w stanie końcowym"
  
- #: src/err-codes.h:246
+ #: src/err-codes.h:249
  msgid "No certificate chain"
-@@ -1086,7 +1082,7 @@
+@@ -1102,7 +1094,7 @@
  
- #: src/err-codes.h:271
+ #: src/err-codes.h:274
  msgid "Forbidden"
 -msgstr ""
 +msgstr "Zabronione"
  
- #: src/err-codes.h:272
+ #: src/err-codes.h:275
  msgid "Key disabled"
-@@ -1197,442 +1193,328 @@
+@@ -1118,11 +1110,11 @@
+ 
+ #: src/err-codes.h:278
+ msgid "True"
+-msgstr ""
++msgstr "Prawda"
+ 
+ #: src/err-codes.h:279
+ msgid "False"
+-msgstr ""
++msgstr "Fałsz"
+ 
+ #: src/err-codes.h:280
+ msgid "General IPC error"
+@@ -1221,442 +1213,328 @@
  msgstr "Nieznane zapytanie IPC"
  
- #: src/err-codes.h:299
+ #: src/err-codes.h:304
 -#, fuzzy
 -#| msgid "General IPC error"
  msgid "General LDAP error"
 -msgstr "Błąd ogólny IPC"
 +msgstr "Błąd ogólny LDAP"
  
- #: src/err-codes.h:300
+ #: src/err-codes.h:305
 -#, fuzzy
 -#| msgid "General error"
  msgid "General LDAP attribute error"
 -msgstr "Błąd ogólny"
 +msgstr "Błąd ogólny atrybutu LDAP"
  
- #: src/err-codes.h:301
+ #: src/err-codes.h:306
 -#, fuzzy
 -#| msgid "General error"
  msgid "General LDAP name error"
 -msgstr "Błąd ogólny"
 +msgstr "Błąd ogólny nazwy LDAP"
  
- #: src/err-codes.h:302
+ #: src/err-codes.h:307
 -#, fuzzy
 -#| msgid "General Assuan error"
  msgid "General LDAP security error"
 -msgstr "Błąd ogólny Assuana"
 +msgstr "Błąd ogólny bezpieczeństwa LDAP"
  
- #: src/err-codes.h:303
+ #: src/err-codes.h:308
 -#, fuzzy
 -#| msgid "General error"
  msgid "General LDAP service error"
 -msgstr "Błąd ogólny"
 +msgstr "Błąd ogólny usługi LDAP"
  
- #: src/err-codes.h:304
+ #: src/err-codes.h:309
 -#, fuzzy
 -#| msgid "General Assuan error"
  msgid "General LDAP update error"
 -msgstr "Błąd ogólny Assuana"
 +msgstr "Błąd ogólny aktualizacji LDAP"
  
- #: src/err-codes.h:305
+ #: src/err-codes.h:310
  msgid "Experimental LDAP error code"
 -msgstr ""
 +msgstr "Eksperymentalny kod błędu LDAP"
  
- #: src/err-codes.h:306
+ #: src/err-codes.h:311
 -#, fuzzy
 -#| msgid "IPC write error"
  msgid "Private LDAP error code"
 -msgstr "Błąd zapisu IPC"
 +msgstr "Prywatny kod błędu LDAP"
  
- #: src/err-codes.h:307
+ #: src/err-codes.h:312
 -#, fuzzy
 -#| msgid "General IPC error"
  msgid "Other general LDAP error"
 -msgstr "Błąd ogólny IPC"
 +msgstr "Inny błąd ogólny LDAP"
  
- #: src/err-codes.h:308
+ #: src/err-codes.h:313
 -#, fuzzy
 -#| msgid "IPC connect call failed"
  msgid "LDAP connecting failed (X)"
 -msgstr "Wywołanie connect dla IPC nie powiodło się"
 +msgstr "Połączenie z LDAP nie powiodło się (X)"
  
- #: src/err-codes.h:309
+ #: src/err-codes.h:314
 -#, fuzzy
 -#| msgid "General error"
  msgid "LDAP referral limit exceeded"
 -msgstr "Błąd ogólny"
 +msgstr "Przekroczony limit odniesień LDAP"
  
- #: src/err-codes.h:310
+ #: src/err-codes.h:315
  msgid "LDAP client loop"
 -msgstr ""
 +msgstr "Pętla klienta LDAP"
  
- #: src/err-codes.h:311
+ #: src/err-codes.h:316
 -#, fuzzy
 -#| msgid "Card reset required"
  msgid "No LDAP results returned"
 -msgstr "Wymagany reset karty"
 +msgstr "Nie zwrócono wyników LDAP"
  
- #: src/err-codes.h:312
+ #: src/err-codes.h:317
 -#, fuzzy
 -#| msgid "Element not found"
  msgid "LDAP control not found"
 -msgstr "Element nie znaleziony"
 +msgstr "Nie znaleziono sterowania LDAP"
  
- #: src/err-codes.h:313
+ #: src/err-codes.h:318
 -#, fuzzy
 -#| msgid "Not supported"
  msgid "Not supported by LDAP"
 -msgstr "Nie obsługiwane"
 +msgstr "Nie obsługiwane przez LDAP"
  
- #: src/err-codes.h:314
+ #: src/err-codes.h:319
 -#, fuzzy
 -#| msgid "Unexpected error"
  msgid "LDAP connect error"
 -msgstr "Nieoczekiwany błąd"
 +msgstr "Błąd połączenia z LDAP"
  
- #: src/err-codes.h:315
+ #: src/err-codes.h:320
  msgid "Out of memory in LDAP"
 -msgstr ""
 +msgstr "Brak pamięci w LDAP"
  
- #: src/err-codes.h:316
+ #: src/err-codes.h:321
  msgid "Bad parameter to an LDAP routine"
 -msgstr ""
 +msgstr "Błędny parametr procedury LDAP"
  
- #: src/err-codes.h:317
+ #: src/err-codes.h:322
 -#, fuzzy
 -#| msgid "Unsupported operation"
  msgid "User cancelled LDAP operation"
 -msgstr "Nieobsługiwana operacja"
 +msgstr "Operacja LDAP anulowana przez użytkownika"
  
- #: src/err-codes.h:318
+ #: src/err-codes.h:323
 -#, fuzzy
 -#| msgid "Bad certificate"
  msgid "Bad LDAP search filter"
 -msgstr "Błędny certyfikat"
 +msgstr "Błędny filtr wyszukiwania LDAP"
  
- #: src/err-codes.h:319
+ #: src/err-codes.h:324
 -#, fuzzy
 -#| msgid "Unknown extension"
  msgid "Unknown LDAP authentication method"
 -msgstr "Nieznane rozszerzenie"
 +msgstr "Nieznana metoda uwierzytelnienia LDAP"
  
- #: src/err-codes.h:320
+ #: src/err-codes.h:325
 -#, fuzzy
 -#| msgid "Timeout"
  msgid "Timeout in LDAP"
 -msgstr "Upłynął limit czasu"
 +msgstr "Limit czasu w LDAP"
  
- #: src/err-codes.h:321
+ #: src/err-codes.h:326
 -#, fuzzy
 -#| msgid "dirmngr error"
  msgid "LDAP decoding error"
 -msgstr "Błąd dirmngr"
 +msgstr "Błąd dekodowania LDAP"
  
- #: src/err-codes.h:322
+ #: src/err-codes.h:327
 -#, fuzzy
 -#| msgid "dirmngr error"
  msgid "LDAP encoding error"
 -msgstr "Błąd dirmngr"
 +msgstr "Błąd kodowania LDAP"
  
- #: src/err-codes.h:323
+ #: src/err-codes.h:328
 -#, fuzzy
 -#| msgid "IPC read error"
  msgid "LDAP local error"
 -msgstr "Błąd odczytu IPC"
 +msgstr "Błąd lokalny LDAP"
  
- #: src/err-codes.h:324
+ #: src/err-codes.h:329
 -#, fuzzy
 -#| msgid "Not an IPC server"
  msgid "Cannot contact LDAP server"
 -msgstr "To nie jest serwer IPC"
 +msgstr "Nie można połączyć się z serwerem LDAP"
  
- #: src/err-codes.h:325
+ #: src/err-codes.h:330
 -#, fuzzy
 -#| msgid "Success"
  msgid "LDAP success"
 -msgstr "Sukces"
 +msgstr "Sukces LDAP"
  
- #: src/err-codes.h:326
+ #: src/err-codes.h:331
 -#, fuzzy
 -#| msgid "Configuration error"
  msgid "LDAP operations error"
 -msgstr "Błąd konfiguracji"
 +msgstr "Błąd operacji LDAP"
  
- #: src/err-codes.h:327
+ #: src/err-codes.h:332
 -#, fuzzy
 -#| msgid "Protocol violation"
  msgid "LDAP protocol error"
 -msgstr "Naruszenie protokołu"
 +msgstr "Błąd protokołu LDAP"
  
- #: src/err-codes.h:328
+ #: src/err-codes.h:333
  msgid "Time limit exceeded in LDAP"
 -msgstr ""
 +msgstr "Przekroczony limit czasu w LDAP"
  
- #: src/err-codes.h:329
+ #: src/err-codes.h:334
  msgid "Size limit exceeded in LDAP"
 -msgstr ""
 +msgstr "Przekroczony limit rozmiaru w LDAP"
  
- #: src/err-codes.h:330
+ #: src/err-codes.h:335
  msgid "LDAP compare false"
 -msgstr ""
 +msgstr "Porównanie LDAP fałszywe"
  
- #: src/err-codes.h:331
+ #: src/err-codes.h:336
  msgid "LDAP compare true"
 -msgstr ""
 +msgstr "Porównanie LDAP prawdziwe"
  
- #: src/err-codes.h:332
+ #: src/err-codes.h:337
 -#, fuzzy
 -#| msgid "Unknown extension"
  msgid "LDAP authentication method not supported"
 -msgstr "Nieznane rozszerzenie"
 +msgstr "Nieobsługiwana metoda uwierzytelnienia LDAP"
  
- #: src/err-codes.h:333
+ #: src/err-codes.h:338
  msgid "Strong(er) LDAP authentication required"
 -msgstr ""
 +msgstr "Wymagana silniejsze uwierzytelnienie LDAP"
  
- #: src/err-codes.h:334
+ #: src/err-codes.h:339
 -#, fuzzy
 -#| msgid "Fatal alert message received"
  msgid "Partial LDAP results+referral received"
 -msgstr "Otrzymano komunikat alarmu krytycznego"
 +msgstr "Otrzymano częściowe wyniki+odniesienie LDAP"
  
- #: src/err-codes.h:335
+ #: src/err-codes.h:340
 -#, fuzzy
 -#| msgid "General error"
  msgid "LDAP referral"
 -msgstr "Błąd ogólny"
 +msgstr "Odniesienie LDAP"
  
- #: src/err-codes.h:336
+ #: src/err-codes.h:341
  msgid "Administrative LDAP limit exceeded"
 -msgstr ""
 +msgstr "Przekroczony limit administracyjny LDAP"
  
- #: src/err-codes.h:337
+ #: src/err-codes.h:342
  msgid "Critical LDAP extension is unavailable"
 -msgstr ""
 +msgstr "Krytyczne rozszerzenie LDAP jest niedostępne"
  
- #: src/err-codes.h:338
+ #: src/err-codes.h:343
 -#, fuzzy
 -#| msgid "Card reset required"
  msgid "Confidentiality required by LDAP"
 -msgstr "Wymagany reset karty"
 +msgstr "Zaufanie wymagane przez LDAP"
  
- #: src/err-codes.h:339
+ #: src/err-codes.h:344
  msgid "LDAP SASL bind in progress"
 -msgstr ""
 +msgstr "Wiązanie LDAP SASL w trakcie"
  
- #: src/err-codes.h:340
+ #: src/err-codes.h:345
  msgid "No such LDAP attribute"
 -msgstr ""
 +msgstr "Nie ma takiego atrybutu LDAP"
  
- #: src/err-codes.h:341
+ #: src/err-codes.h:346
 -#, fuzzy
 -#| msgid "Invalid attribute"
  msgid "Undefined LDAP attribute type"
 -msgstr "Niepoprawny atrybut"
 +msgstr "Niezdefiniowany typ atrybutu LDAP"
  
- #: src/err-codes.h:342
+ #: src/err-codes.h:347
 -#, fuzzy
 -#| msgid "Unsupported protection"
  msgid "Inappropriate matching in LDAP"
 -msgstr "Nieobsługiwane zabezpieczenie"
 +msgstr "Niewłaściwe dopasowanie w LDAP"
  
- #: src/err-codes.h:343
+ #: src/err-codes.h:348
 -#, fuzzy
 -#| msgid "Protocol violation"
  msgid "Constraint violation in LDAP"
 -msgstr "Naruszenie protokołu"
 +msgstr "Naruszenie ograniczenia w LDAP"
  
- #: src/err-codes.h:344
+ #: src/err-codes.h:349
  msgid "LDAP type or value exists"
 -msgstr ""
 +msgstr "Typ lub wartość LDAP istnieje"
  
- #: src/err-codes.h:345
+ #: src/err-codes.h:350
 -#, fuzzy
 -#| msgid "Invalid state"
  msgid "Invalid syntax in LDAP"
 -msgstr "Niepoprawny stan"
 +msgstr "Błędna składnia w LDAP"
  
- #: src/err-codes.h:346
+ #: src/err-codes.h:351
 -#, fuzzy
 -#| msgid "No CMS object"
  msgid "No such LDAP object"
 -msgstr "Brak obiektu CMS"
 +msgstr "Nie ma takiego obiektu LDAP"
  
- #: src/err-codes.h:347
+ #: src/err-codes.h:352
 -#, fuzzy
 -#| msgid "Hardware problem"
  msgid "LDAP alias problem"
 -msgstr "Problem sprzętowy"
 +msgstr "Problem z aliasem LDAP"
  
- #: src/err-codes.h:348
+ #: src/err-codes.h:353
 -#, fuzzy
 -#| msgid "Invalid state"
  msgid "Invalid DN syntax in LDAP"
 -msgstr "Niepoprawny stan"
 +msgstr "Błędna składnia DN w LDAP"
  
- #: src/err-codes.h:349
+ #: src/err-codes.h:354
  msgid "LDAP entry is a leaf"
 -msgstr ""
 +msgstr "Wpis LDAP jest liściem"
  
- #: src/err-codes.h:350
+ #: src/err-codes.h:355
 -#, fuzzy
 -#| msgid "Encoding problem"
  msgid "LDAP alias dereferencing problem"
 -msgstr "Problem z kodowaniem"
 +msgstr "Problem z rozwinięciem aliasu LDAP"
  
- #: src/err-codes.h:351
+ #: src/err-codes.h:356
  msgid "LDAP proxy authorization failure (X)"
 -msgstr ""
 +msgstr "Błąd autoryzacji do proxy LDAP (X)"
  
- #: src/err-codes.h:352
+ #: src/err-codes.h:357
 -#, fuzzy
 -#| msgid "Unsupported protection"
  msgid "Inappropriate LDAP authentication"
 -msgstr "Nieobsługiwane zabezpieczenie"
 +msgstr "Niewłaściwe uwierzytelnienie LDAP"
  
- #: src/err-codes.h:353
+ #: src/err-codes.h:358
 -#, fuzzy
 -#| msgid "Invalid card"
  msgid "Invalid LDAP credentials"
 -msgstr "Niepoprawna karta"
 +msgstr "Błędne dane uwierzytelniające LDAP"
  
- #: src/err-codes.h:354
+ #: src/err-codes.h:359
  msgid "Insufficient access for LDAP"
 -msgstr ""
 +msgstr "Niewystarczający dostęp dla LDAP"
  
- #: src/err-codes.h:355
+ #: src/err-codes.h:360
  msgid "LDAP server is busy"
 -msgstr ""
 +msgstr "Serwer LDAP jest zajęty"
  
- #: src/err-codes.h:356
+ #: src/err-codes.h:361
 -#, fuzzy
 -#| msgid "No keyserver available"
  msgid "LDAP server is unavailable"
 -msgstr "Brak dostępnego serwera kluczy"
 +msgstr "Serwer LDAP jest niedostępny"
  
- #: src/err-codes.h:357
+ #: src/err-codes.h:362
  msgid "LDAP server is unwilling to perform"
 -msgstr ""
 +msgstr "Serwer LDAP nie zamierza wykonać żądania"
  
- #: src/err-codes.h:358
+ #: src/err-codes.h:363
  msgid "Loop detected by LDAP"
 -msgstr ""
 +msgstr "Pętla wykryta przez LDAP"
  
- #: src/err-codes.h:359
+ #: src/err-codes.h:364
 -#, fuzzy
 -#| msgid "Missing action"
  msgid "LDAP naming violation"
 -msgstr "Brak akcji"
 +msgstr "Naruszenie nazw LDAP"
  
- #: src/err-codes.h:360
+ #: src/err-codes.h:365
 -#, fuzzy
 -#| msgid "Protocol violation"
  msgid "LDAP object class violation"
 -msgstr "Naruszenie protokołu"
 +msgstr "Naruszenie klasy obiektu LDAP"
  
- #: src/err-codes.h:361
+ #: src/err-codes.h:366
 -#, fuzzy
 -#| msgid "Operation not yet finished"
  msgid "LDAP operation not allowed on non-leaf"
 -msgstr "Operacja jeszcze nie zakończona"
 +msgstr "Operacja LDAP nie jest dozwolona na nie-liściu"
  
- #: src/err-codes.h:362
+ #: src/err-codes.h:367
 -#, fuzzy
 -#| msgid "Operation cancelled"
  msgid "LDAP operation not allowed on RDN"
 -msgstr "Operacja anulowana"
 +msgstr "Operacja LDAP nie jest dozwolona na RDN"
  
- #: src/err-codes.h:363
+ #: src/err-codes.h:368
  msgid "Already exists (LDAP)"
 -msgstr ""
 +msgstr "Już istnieje (LDAP)"
  
- #: src/err-codes.h:364
+ #: src/err-codes.h:369
  msgid "Cannot modify LDAP object class"
 -msgstr ""
 +msgstr "Nie można zmodyfikować klasy obiektu LDAP"
  
- #: src/err-codes.h:365
+ #: src/err-codes.h:370
 -#, fuzzy
 -#| msgid "Line too long"
  msgid "LDAP results too large"
 -msgstr "Linia zbyt długa"
 +msgstr "Wyniki LDAP zbyt duże"
  
- #: src/err-codes.h:366
+ #: src/err-codes.h:371
 -#, fuzzy
 -#| msgid "Operation cancelled"
  msgid "LDAP operation affects multiple DSAs"
 -msgstr "Operacja anulowana"
 +msgstr "Operacja LDAP obejmuje wiele DSA"
  
- #: src/err-codes.h:367
+ #: src/err-codes.h:372
  msgid "Virtual LDAP list view error"
 -msgstr ""
 +msgstr "Błąd widoku wirtualnej listy LDAP"
  
- #: src/err-codes.h:368
+ #: src/err-codes.h:373
 -#, fuzzy
 -#| msgid "General IPC error"
  msgid "Other LDAP error"
 -msgstr "Błąd ogólny IPC"
 +msgstr "Inny błąd LDAP"
  
- #: src/err-codes.h:369
+ #: src/err-codes.h:374
 -#, fuzzy
 -#| msgid "Resources exhausted"
  msgid "Resources exhausted in LCUP"
 -msgstr "Zasoby wyczerpane"
 +msgstr "Zasoby wyczerpane w LCUP"
  
- #: src/err-codes.h:370
+ #: src/err-codes.h:375
 -#, fuzzy
 -#| msgid "Protocol violation"
  msgid "Security violation in LCUP"
 -msgstr "Naruszenie protokołu"
 +msgstr "Naruszenie bezpieczeństwa w LCUP"
  
- #: src/err-codes.h:371
+ #: src/err-codes.h:376
 -#, fuzzy
 -#| msgid "Invalid state"
  msgid "Invalid data in LCUP"
 -msgstr "Niepoprawny stan"
 +msgstr "Błędne dane w LCUP"
  
- #: src/err-codes.h:372
+ #: src/err-codes.h:377
 -#, fuzzy
 -#| msgid "Unsupported certificate"
  msgid "Unsupported scheme in LCUP"
 -msgstr "Nieobsługiwany certyfikat"
 +msgstr "Nieobsługiwany schemat w LCUP"
  
- #: src/err-codes.h:373
+ #: src/err-codes.h:378
 -#, fuzzy
 -#| msgid "Card reset required"
  msgid "Reload required in LCUP"
 -msgstr "Wymagany reset karty"
 +msgstr "Wymagane przeładowanie w LCUP"
  
- #: src/err-codes.h:374
+ #: src/err-codes.h:379
 -#, fuzzy
 -#| msgid "Success"
  msgid "LDAP cancelled"
 -msgstr "Sukces"
 +msgstr "LDAP anulowane"
  
- #: src/err-codes.h:375
+ #: src/err-codes.h:380
 -#, fuzzy
 -#| msgid "Not operational"
  msgid "No LDAP operation to cancel"
 -msgstr "Nie gotowy"
 +msgstr "Brak operacji LDAP do anulowania"
  
- #: src/err-codes.h:376
+ #: src/err-codes.h:381
 -#, fuzzy
 -#| msgid "Not operational"
  msgid "Too late to cancel LDAP"
 -msgstr "Nie gotowy"
 +msgstr "Za późno na anulowanie LDAP"
  
- #: src/err-codes.h:377
+ #: src/err-codes.h:382
 -#, fuzzy
 -#| msgid "Not an IPC server"
  msgid "Cannot cancel LDAP"
 -msgstr "To nie jest serwer IPC"
 +msgstr "Nie można anulować LDAP"
  
- #: src/err-codes.h:378
+ #: src/err-codes.h:383
 -#, fuzzy
 -#| msgid "Decryption failed"
  msgid "LDAP assertion failed"
 -msgstr "Odszyfrowywanie nie powiodło się"
 +msgstr "Zapewnienie LDAP nie powiodło się"
  
- #: src/err-codes.h:379
+ #: src/err-codes.h:384
  msgid "Proxied authorization denied by LDAP"
 -msgstr ""
 +msgstr "Autoryzacja do proxy odrzucona przez LDAP"
  
- #: src/err-codes.h:380
+ #: src/err-codes.h:385
  msgid "User defined error code 1"
