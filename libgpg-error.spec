@@ -1,8 +1,3 @@
-# TODO: package lisp files?
-#	%{_datadir}/common-lisp/source/gpg-error/gpg-error-codes.lisp
-#	%{_datadir}/common-lisp/source/gpg-error/gpg-error-package.lisp
-#	%{_datadir}/common-lisp/source/gpg-error/gpg-error.asd
-#	%{_datadir}/common-lisp/source/gpg-error/gpg-error.lisp
 #
 # Conditional build:
 %bcond_without	static_libs	# don't build static library
@@ -11,7 +6,7 @@ Summary:	Library libgpg-error
 Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
 Version:	1.24
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/libgpg-error/%{name}-%{version}.tar.bz2
@@ -78,6 +73,19 @@ libgcrypt, pinentry, SmartCard Daemon i inne - w przyszłości.
 
 Pakiet zawiera statyczne biblioteki libgpg-error.
 
+%package -n common-lisp-gpg-error
+Summary:	Common Lisp binding for libgpg-error library
+Summary(pl.UTF-8):	Wiązania Common Lispa do biblioteki libgpg-error
+Group:		Libraries
+Requires:	%{name} = %{version}-%{release}
+Requires:	common-lisp-controller
+
+%description -n common-lisp-gpg-error
+Common Lisp binding for libgpg-error library.
+
+%description -n common-lisp-gpg-error -l pl.UTF-8
+Wiązania Common Lispa do biblioteki libgpg-error.
+
 %prep
 %setup -q
 %patch0 -p1
@@ -137,6 +145,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/libgpg-error.a
 %endif
 
-#%files... lisp or -n lisp-%{name} ???
-#%defattr(644,root,root,755)
-#%{_datadir}/common-lisp/gpg-error*
+%files -n common-lisp-gpg-error
+%defattr(644,root,root,755)
+%{_datadir}/common-lisp/source/gpg-error
