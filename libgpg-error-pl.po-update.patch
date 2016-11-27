@@ -1,5 +1,5 @@
---- libgpg-error-1.23/po/pl.po.orig	2016-06-22 21:58:07.674691821 +0200
-+++ libgpg-error-1.23/po/pl.po	2016-06-22 21:59:09.011026201 +0200
+--- libgpg-error-1.25/po/pl.po.orig	2016-11-14 17:22:22.000000000 +0100
++++ libgpg-error-1.25/po/pl.po	2016-11-27 11:24:07.450152894 +0100
 @@ -966,7 +966,7 @@
  
  #: src/err-codes.h:242
@@ -9,3 +9,65 @@
  
  #: src/err-codes.h:243
  msgid "Database is corrupted"
+@@ -1221,52 +1221,40 @@
+ msgstr "Nieznane zapytanie IPC"
+ 
+ #: src/err-codes.h:306
+-#, fuzzy
+-#| msgid "No crypto engine"
+ msgid "Crypto engine too old"
+-msgstr "Brak silnika kryptograficznego"
++msgstr "Silnik kryptograficzny zbyt stary"
+ 
+ #: src/err-codes.h:307
+ msgid "Screen or window too small"
+-msgstr ""
++msgstr "Ekran lub okno zbyt małe"
+ 
+ #: src/err-codes.h:308
+ msgid "Screen or window too large"
+-msgstr ""
++msgstr "Ekran lub okno zbyt duże"
+ 
+ #: src/err-codes.h:309
+ msgid "Required environment variable not set"
+-msgstr ""
++msgstr "Wymagana zmienna środowiskowa nie jest ustawiona"
+ 
+ #: src/err-codes.h:310
+-#, fuzzy
+-#| msgid "Already exists (LDAP)"
+ msgid "User ID already exists"
+-msgstr "Już istnieje (LDAP)"
++msgstr "Identyfikator użytkownika już istnieje"
+ 
+ #: src/err-codes.h:311
+-#, fuzzy
+-#| msgid "Already exists (LDAP)"
+ msgid "Name already exists"
+-msgstr "Już istnieje (LDAP)"
++msgstr "Nazwa już istnieje"
+ 
+ #: src/err-codes.h:312
+-#, fuzzy
+-#| msgid "Duplicated value"
+ msgid "Duplicated name"
+-msgstr "Powtórzona wartość"
++msgstr "Powtórzona nazwa"
+ 
+ #: src/err-codes.h:313
+-#, fuzzy
+-#| msgid "Certificate too young"
+ msgid "Object is too young"
+-msgstr "Certyfikat zbyt młody"
++msgstr "Obiekt zbyt młody"
+ 
+ #: src/err-codes.h:314
+-#, fuzzy
+-#| msgid "Provided object is too short"
+ msgid "Object is too old"
+-msgstr "Dostarczony obiekt jest zbyt mały"
++msgstr "Obiekt zbyt stary"
+ 
+ #: src/err-codes.h:315
+ msgid "General LDAP error"
