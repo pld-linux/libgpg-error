@@ -1,5 +1,5 @@
---- libgpg-error-1.25/po/pl.po.orig	2016-11-14 17:22:22.000000000 +0100
-+++ libgpg-error-1.25/po/pl.po	2016-11-27 11:24:07.450152894 +0100
+--- libgpg-error-1.27/po/pl.po.orig	2017-02-28 15:06:40.000000000 +0100
++++ libgpg-error-1.27/po/pl.po	2017-03-08 05:33:16.296866104 +0100
 @@ -966,7 +966,7 @@
  
  #: src/err-codes.h:242
@@ -9,7 +9,7 @@
  
  #: src/err-codes.h:243
  msgid "Database is corrupted"
-@@ -1221,52 +1221,40 @@
+@@ -1221,126 +1221,96 @@
  msgstr "Nieznane zapytanie IPC"
  
  #: src/err-codes.h:306
@@ -70,4 +70,92 @@
 +msgstr "Obiekt zbyt stary"
  
  #: src/err-codes.h:315
+-#, fuzzy
+-#| msgid "Unknown name"
+ msgid "Unknown flag"
+-msgstr "Nieznana nazwa"
++msgstr "Nieznana flaga"
+ 
+ #: src/err-codes.h:316
+-#, fuzzy
+-#| msgid "Invalid operation code"
+ msgid "Invalid execution order"
+-msgstr "Niepoprawny kod operacji"
++msgstr "Błędna kolejność wykonywania"
+ 
+ #: src/err-codes.h:317
+ msgid "Already fetched"
+-msgstr ""
++msgstr "Już pobrano"
+ 
+ #: src/err-codes.h:318
+ msgid "Try again later"
+-msgstr ""
++msgstr "Proszę spróbować później"
+ 
+ #: src/err-codes.h:319
+-#, fuzzy
+-#| msgid "No name"
+ msgid "Wrong name"
+-msgstr "Brak nazwy"
++msgstr "Zła nazwa"
+ 
+ #: src/err-codes.h:320
+ msgid "System bug detected"
+-msgstr ""
++msgstr "Wykryto błąd systemu"
+ 
+ #: src/err-codes.h:321
+-#, fuzzy
+-#| msgid "Unknown system error"
+ msgid "Unknown DNS error"
+-msgstr "Nieznany błąd systemu"
++msgstr "Nieznany błąd DNS"
+ 
+ #: src/err-codes.h:322
+-#, fuzzy
+-#| msgid "Invalid OID string"
+ msgid "Invalid DNS section"
+-msgstr "Niepoprawny łańcuch OID"
++msgstr "Błędna sekcja DNS"
+ 
+ #: src/err-codes.h:323
+-#, fuzzy
+-#| msgid "Invalid S-expression"
+ msgid "Invalid textual address form"
+-msgstr "Niepoprawne S-wyrażenie"
++msgstr "Błędna postać tekstowa adresu"
+ 
+ #: src/err-codes.h:324
+-#, fuzzy
+-#| msgid "Missing issuer certificate"
+ msgid "Missing DNS query packet"
+-msgstr "Brak certyfikatu wystawcy"
++msgstr "Brak pakietu zapytania DNS"
+ 
+ #: src/err-codes.h:325
+ msgid "Missing DNS answer packet"
+-msgstr ""
++msgstr "Brak pakietu odpowiedzi DNS"
+ 
+ #: src/err-codes.h:326
+ msgid "Connection closed in DNS"
+-msgstr ""
++msgstr "Połączenie zamknięte przez DNS"
+ 
+ #: src/err-codes.h:327
+-#, fuzzy
+-#| msgid "Decryption failed"
+ msgid "Verification failed in DNS"
+-msgstr "Odszyfrowywanie nie powiodło się"
++msgstr "Weryfikacja przez DNS nie powiodła się"
+ 
+ #: src/err-codes.h:328
+-#, fuzzy
+-#| msgid "Timeout"
+ msgid "DNS Timeout"
+-msgstr "Upłynął limit czasu"
++msgstr "Upłynął limit czasu DNS"
+ 
+ #: src/err-codes.h:329
  msgid "General LDAP error"
