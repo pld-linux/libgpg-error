@@ -5,14 +5,13 @@
 Summary:	Library libgpg-error
 Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
-Version:	1.36
+Version:	1.37
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/libgpg-error/%{name}-%{version}.tar.bz2
-# Source0-md5:	eff437f397e858a9127b76c0d87fa5ed
-Patch0:		%{name}-pl.po-update.patch
-Patch1:		%{name}-info.patch
+# Source0-md5:	729f22d917494fdc4b54fce5aa6547c7
+Patch0:		%{name}-info.patch
 URL:		http://www.gnupg.org/related_software/libgpg-error/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.14
@@ -89,7 +88,6 @@ Wiązania Common Lispa do biblioteki libgpg-error.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
 
 %{__rm} po/stamp-po
 
