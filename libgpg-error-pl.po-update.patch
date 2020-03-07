@@ -1,0 +1,219 @@
+--- libgpg-error-1.37/po/pl.po.orig	2020-02-07 13:14:19.000000000 +0100
++++ libgpg-error-1.37/po/pl.po	2020-03-07 21:01:38.473849677 +0100
+@@ -1,14 +1,14 @@
+ # Polish translation for libgpg-error.
+ # Copyright (C) 2004, 2005, 2006 Free Software Foundation, Inc.
+ # This file is distributed under the same license as the libgpg-error package.
+-# Jakub Bogusz <qboosh@pld-linux.org>, 2004-2019.
++# Jakub Bogusz <qboosh@pld-linux.org>, 2004-2020.
+ #
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: libgpg-error 1.36\n"
++"Project-Id-Version: libgpg-error 1.37\n"
+ "Report-Msgid-Bugs-To: translations@gnupg.org\n"
+ "POT-Creation-Date: 2020-02-07 13:14+0100\n"
+-"PO-Revision-Date: 2019-03-24 09:01+0100\n"
++"PO-Revision-Date: 2020-03-07 16:15+0100\n"
+ "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
+ "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
+ "Language: pl\n"
+@@ -1285,26 +1285,20 @@
+ msgstr "Niewłaściwe uwierzytelnienie"
+ 
+ #: src/err-codes.h:322
+-#, fuzzy
+-#| msgid "No agent running"
+ msgid "No Keybox daemon running"
+-msgstr "Agent nie uruchomiony"
++msgstr "Demon Keybox nie uruchomiony"
+ 
+ #: src/err-codes.h:323
+-#, fuzzy
+-#| msgid "SmartCard daemon error"
+ msgid "Keybox daemon error"
+-msgstr "Błąd demona SmartCard"
++msgstr "Błąd demona Keybox"
+ 
+ #: src/err-codes.h:324
+ msgid "Service is not running"
+-msgstr ""
++msgstr "Usługa nie jest uruchomiona"
+ 
+ #: src/err-codes.h:325
+-#, fuzzy
+-#| msgid "Keyserver error"
+ msgid "Service error"
+-msgstr "Błąd serwera kluczy"
++msgstr "Błąd usługi"
+ 
+ #: src/err-codes.h:326
+ msgid "System bug detected"
+@@ -1731,136 +1725,128 @@
+ msgstr "Zdefiniowany przez użytkownika kod błędu 16"
+ 
+ #: src/err-codes.h:432
+-#, fuzzy
+-#| msgid "LDAP success"
+ msgid "SQL success"
+-msgstr "Sukces LDAP"
++msgstr "Sukces SQL"
+ 
+ #: src/err-codes.h:433
+-#, fuzzy
+-#| msgid "Syntax error"
+ msgid "SQL error"
+-msgstr "Błąd składni"
++msgstr "Błąd SQL"
+ 
+ #: src/err-codes.h:434
+ msgid "Internal logic error in SQL library"
+-msgstr ""
++msgstr "Wewnętrzny błąd logiczny w bibliotece SQL"
+ 
+ #: src/err-codes.h:435
+ msgid "Access permission denied (SQL)"
+-msgstr ""
++msgstr "Brak uprawnień (SQL)"
+ 
+ #: src/err-codes.h:436
+ msgid "SQL abort was requested"
+-msgstr ""
++msgstr "Zapytanie SQL przerwane na żądanie"
+ 
+ #: src/err-codes.h:437
+ msgid "SQL database file is locked"
+-msgstr ""
++msgstr "Plik bazy danych SQL jest zablokowany"
+ 
+ #: src/err-codes.h:438
+ msgid "An SQL table in the database is locked"
+-msgstr ""
++msgstr "Tabela SQL w bazie danych jest zablokowana"
+ 
+ #: src/err-codes.h:439
+ msgid "SQL library ran out of core"
+-msgstr ""
++msgstr "Pamięć wyczerpana w bibliotece SQL"
+ 
+ #: src/err-codes.h:440
+ msgid "Attempt to write a readonly SQL database"
+-msgstr ""
++msgstr "Próba zapisu do bazy danych SQL tylko do odczytu"
+ 
+ #: src/err-codes.h:441
+ msgid "SQL operation terminated by interrupt"
+-msgstr ""
++msgstr "Operacja SQL zakończona przez przerwanie"
+ 
+ #: src/err-codes.h:442
+ msgid "I/O error during SQL operation"
+-msgstr ""
++msgstr "Błąd we/wy podczas operacji SQL"
+ 
+ #: src/err-codes.h:443
+ msgid "SQL database disk image is malformed"
+-msgstr ""
++msgstr "Obraz dysku bazy danych SQL jest uszkodzony"
+ 
+ #: src/err-codes.h:444
+ msgid "Unknown opcode in SQL file control"
+-msgstr ""
++msgstr "Nieznany kod operacji w pliku sterującym SQL"
+ 
+ #: src/err-codes.h:445
+ msgid "Insertion failed because SQL database is full"
+-msgstr ""
++msgstr "Wstawianie nie powiodło się, ponieważ baza danych SQL jest pełna"
+ 
+ #: src/err-codes.h:446
+ msgid "Unable to open the SQL database file"
+-msgstr ""
++msgstr "Nie udało się otworzyć pliku bazy danych SQL"
+ 
+ #: src/err-codes.h:447
+-#, fuzzy
+-#| msgid "LDAP protocol error"
+ msgid "SQL database lock protocol error"
+-msgstr "Błąd protokołu LDAP"
++msgstr "Błąd protokołu blokowania bazy danych SQL"
+ 
+ #: src/err-codes.h:448
+ msgid "(internal SQL code: empty)"
+-msgstr ""
++msgstr "(wewnętrzny kod SQL: pusty)"
+ 
+ #: src/err-codes.h:449
+ msgid "SQL database schema changed"
+-msgstr ""
++msgstr "Schemat bazy danych SQL uległ zmianie"
+ 
+ #: src/err-codes.h:450
+ msgid "String or blob exceeds size limit (SQL)"
+-msgstr ""
++msgstr "Łańcuch lub blok danych przekracza limit rozmiaru (SQL)"
+ 
+ #: src/err-codes.h:451
+ msgid "SQL abort due to constraint violation"
+-msgstr ""
++msgstr "Operacja SQL przerwana z powodu naruszenia ograniczeń"
+ 
+ #: src/err-codes.h:452
+ msgid "Data type mismatch (SQL)"
+-msgstr ""
++msgstr "Niezgodność typów danych (SQL)"
+ 
+ #: src/err-codes.h:453
+ msgid "SQL library used incorrectly"
+-msgstr ""
++msgstr "Biblioteka SQL użyta niepoprawnie"
+ 
+ #: src/err-codes.h:454
+ msgid "SQL library uses unsupported OS features"
+-msgstr ""
++msgstr "Biblioteka SQL wykorzystuje nie obsługiwane funkcje systemu operacyjnego"
+ 
+ #: src/err-codes.h:455
+-#, fuzzy
+-#| msgid "Proxied authorization denied by LDAP"
+ msgid "Authorization denied (SQL)"
+-msgstr "Autoryzacja przez proxy odrzucona przez LDAP"
++msgstr "Autoryzacja odrzucona (SQL)"
+ 
+ #: src/err-codes.h:456
+ msgid "(unused SQL code: format)"
+-msgstr ""
++msgstr "(nie używany kod SQL: format)"
+ 
+ #: src/err-codes.h:457
+ msgid "SQL bind parameter out of range"
+-msgstr ""
++msgstr "Parametr dowiązania SQL spoza zakresu"
+ 
+ #: src/err-codes.h:458
+ msgid "File opened that is not an SQL database file"
+-msgstr ""
++msgstr "Otwarty plik nie jest bazą danych SQL"
+ 
+ #: src/err-codes.h:459
+ msgid "Notifications from SQL logger"
+-msgstr ""
++msgstr "Powiadomienia z loggera SQL"
+ 
+ #: src/err-codes.h:460
+ msgid "Warnings from SQL logger"
+-msgstr ""
++msgstr "Ostrzeżenia z loggera SQL"
+ 
+ #: src/err-codes.h:461
+ msgid "SQL has another row ready"
+-msgstr ""
++msgstr "Baza SQL ma gotowy kolejny wiersz"
+ 
+ #: src/err-codes.h:462
+ msgid "SQL has finished executing"
+-msgstr ""
++msgstr "Baza SQL zakończyła wykonywanie"
+ 
+ #: src/err-codes.h:463
+ msgid "System error w/o errno"
