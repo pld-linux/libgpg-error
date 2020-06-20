@@ -1,5 +1,5 @@
---- libgpg-error-1.37/po/pl.po.orig	2020-02-07 13:14:19.000000000 +0100
-+++ libgpg-error-1.37/po/pl.po	2020-03-07 21:01:38.473849677 +0100
+--- libgpg-error-1.38/po/pl.po.orig	2020-05-29 15:01:29.000000000 +0200
++++ libgpg-error-1.38/po/pl.po	2020-06-20 07:51:09.233121506 +0200
 @@ -1,14 +1,14 @@
  # Polish translation for libgpg-error.
  # Copyright (C) 2004, 2005, 2006 Free Software Foundation, Inc.
@@ -14,7 +14,7 @@
  "Report-Msgid-Bugs-To: translations@gnupg.org\n"
  "POT-Creation-Date: 2020-05-29 15:01+0200\n"
 -"PO-Revision-Date: 2019-03-24 09:01+0100\n"
-+"PO-Revision-Date: 2020-03-07 16:15+0100\n"
++"PO-Revision-Date: 2020-06-20 07:45+0200\n"
  "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
  "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
  "Language: pl\n"
@@ -217,3 +217,74 @@
  
  #: src/err-codes.h:463
  msgid "System error w/o errno"
+@@ -1907,32 +1893,24 @@
+ msgstr "błędna definicja aliasu"
+ 
+ #: src/argparse.c:482 src/argparse.c:519
+-#, fuzzy
+-#| msgid "LDAP operations error"
+ msgid "permission error"
+-msgstr "Błąd operacji LDAP"
++msgstr "błąd uprawnień"
+ 
+ #: src/argparse.c:484 src/argparse.c:517
+ msgid "out of core"
+ msgstr "brak pamięci"
+ 
+ #: src/argparse.c:488 src/argparse.c:523
+-#, fuzzy
+-#| msgid "invalid command"
+ msgid "invalid meta command"
+-msgstr "błędne polecenie"
++msgstr "błędne polecenie meta"
+ 
+ #: src/argparse.c:490 src/argparse.c:525
+-#, fuzzy
+-#| msgid "Unknown command"
+ msgid "unknown meta command"
+-msgstr "Nieznane polecenie"
++msgstr "nieznane polecenie meta"
+ 
+ #: src/argparse.c:492 src/argparse.c:527
+-#, fuzzy
+-#| msgid "Unexpected IPC command"
+ msgid "unexpected meta command"
+-msgstr "Nieoczekiwane polecenie IPC"
++msgstr "nieoczekiwane polecenie meta"
+ 
+ #: src/argparse.c:494
+ msgid "invalid option"
+@@ -1976,22 +1954,22 @@
+ #: src/argparse.c:1658 src/argparse.c:1753
+ #, c-format
+ msgid "Note: no default option file '%s'\n"
+-msgstr ""
++msgstr "Uwaga: brak domyślnego pliku opcji ,,%s''\n"
+ 
+ #: src/argparse.c:1668 src/argparse.c:1760
+ #, c-format
+ msgid "reading options from '%s'\n"
+-msgstr ""
++msgstr "odczyt opcji z ,,%s''\n"
+ 
+ #: src/argparse.c:1745
+ #, c-format
+ msgid "option file '%s': %s\n"
+-msgstr ""
++msgstr "plik opcji ,,%s'': %s\n"
+ 
+ #: src/argparse.c:2183
+ #, c-format
+ msgid "Note: ignoring option \"--%s\" due to global config\n"
+-msgstr ""
++msgstr "Uwaga: ignorowanie opcji ,,--%s'' ze względu na konfigurację globalną\n"
+ 
+ #: src/gpg-error.c:522
+ msgid "Please report bugs to <https://bugs.gnupg.org>.\n"
+@@ -2001,6 +1979,3 @@
+ #, c-format
+ msgid "warning: could not recognize %s\n"
+ msgstr "uwaga: nie rozpoznano %s\n"
+-
+-#~ msgid "out of core\n"
+-#~ msgstr "brak pamięci\n"
