@@ -10,9 +10,9 @@
  msgid ""
  msgstr ""
 -"Project-Id-Version: libgpg-error 1.36\n"
-+"Project-Id-Version: libgpg-error 1.38\n"
++"Project-Id-Version: libgpg-error 1.39\n"
  "Report-Msgid-Bugs-To: translations@gnupg.org\n"
- "POT-Creation-Date: 2020-05-29 15:01+0200\n"
+ "POT-Creation-Date: 2020-08-24 13:06+0200\n"
 -"PO-Revision-Date: 2019-03-24 09:01+0100\n"
 +"PO-Revision-Date: 2020-06-20 07:45+0200\n"
  "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
@@ -273,7 +273,7 @@
 -msgstr ""
 +msgstr "plik opcji ,,%s'': %s\n"
  
- #: src/argparse.c:2183
+ #: src/argparse.c:2182
  #, c-format
  msgid "Note: ignoring option \"--%s\" due to global config\n"
 -msgstr ""
