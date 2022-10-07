@@ -8,7 +8,7 @@
 +@dircategory Libraries:
  @direntry
 -* libgpg-error: (gpgrt).   Error codes and common code for GnuPG.
-+* libgpg-error: (gnupg).		Error codes and common code for GnuPG
++* libgpg-error: (gpgrt).		Error codes and common code for GnuPG
  @end direntry
  
  @c A couple of macros with no effect on texinfo
