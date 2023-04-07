@@ -1,0 +1,44 @@
+--- libgpg-error-1.47/po/pl.po.orig	2023-04-06 10:30:26.000000000 +0200
++++ libgpg-error-1.47/po/pl.po	2023-04-07 21:40:57.512593909 +0200
+@@ -1,14 +1,14 @@
+ # Polish translation for libgpg-error.
+ # Copyright (C) 2004, 2005, 2006 Free Software Foundation, Inc.
+ # This file is distributed under the same license as the libgpg-error package.
+-# Jakub Bogusz <qboosh@pld-linux.org>, 2004-2020.
++# Jakub Bogusz <qboosh@pld-linux.org>, 2004-2023.
+ #
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: libgpg-error 1.38\n"
++"Project-Id-Version: libgpg-error 1.47\n"
+ "Report-Msgid-Bugs-To: translations@gnupg.org\n"
+ "POT-Creation-Date: 2023-04-06 10:30+0200\n"
+-"PO-Revision-Date: 2021-03-22 10:42+0100\n"
++"PO-Revision-Date: 2023-04-07 21:30+0200\n"
+ "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
+ "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
+ "Language: pl\n"
+@@ -1309,20 +1309,16 @@ msgid "Service error"
+ msgstr "Błąd usługi"
+ 
+ #: src/err-codes.h:326
+-#, fuzzy
+-#| msgid "Bad PIN"
+ msgid "Bad PUK"
+-msgstr "Błędny PIN"
++msgstr "Błędny PUK"
+ 
+ #: src/err-codes.h:327
+ msgid "No reset code"
+-msgstr ""
++msgstr "Brak kodu resetującego"
+ 
+ #: src/err-codes.h:328
+-#, fuzzy
+-#| msgid "Bad secret key"
+ msgid "Bad reset code"
+-msgstr "Błędny klucz tajny"
++msgstr "Błędny kod resetujący"
+ 
+ #: src/err-codes.h:329
+ msgid "System bug detected"
