@@ -5,12 +5,12 @@
 Summary:	Library libgpg-error
 Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
-Version:	1.46
+Version:	1.47
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/libgpg-error/%{name}-%{version}.tar.bz2
-# Source0-md5:	db41efe5aba3baad6cf266fea720095d
+# Source0-md5:	58e054ca192a77226c4822bbee1b7fdb
 Patch0:		%{name}-info.patch
 URL:		http://www.gnupg.org/related_software/libgpg-error/
 BuildRequires:	autoconf >= 2.59
@@ -140,6 +140,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_aclocaldir}/gpgrt.m4
 %{_infodir}/gpgrt.info*
 %{_pkgconfigdir}/gpg-error.pc
+%{_datadir}/man/man1/gpgrt-config.1*
 
 %if %{with static_libs}
 %files static
