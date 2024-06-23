@@ -1,19 +1,19 @@
 #
 # Conditional build:
-%bcond_without	static_libs	# don't build static library
+%bcond_without	static_libs	# static library
 #
 Summary:	Library libgpg-error
 Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
-Version:	1.49
+Version:	1.50
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.gnupg.org/gcrypt/libgpg-error/%{name}-%{version}.tar.bz2
-# Source0-md5:	9ea45a130048f9c35adb6f4dbf3d92e1
+# Source0-md5:	80e905ce798553c766e3384467dc55ea
 Patch0:		%{name}-info.patch
-URL:		http://www.gnupg.org/related_software/libgpg-error/
-BuildRequires:	autoconf >= 2.59
+URL:		https://www.gnupg.org/related_software/libgpg-error/
+BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake >= 1:1.14
 BuildRequires:	gettext-tools >= 0.19.3
 BuildRequires:	libtool >= 2:2.2.6
