@@ -87,7 +87,7 @@ Wiązania Common Lispa do biblioteki libgpg-error.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %{__rm} po/stamp-po
 
