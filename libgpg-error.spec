@@ -6,7 +6,7 @@ Summary:	Library libgpg-error
 Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
 Version:	1.53
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	https://www.gnupg.org/ftp/gcrypt/libgpg-error/%{name}-%{version}.tar.bz2
@@ -34,7 +34,7 @@ libgcrypt, pinentry, SmartCard Daemon i inne - w przyszłości.
 Summary:	Header files for libgpg-error
 Summary(pl.UTF-8):	Pliki nagłówkowe dla libgpg-error
 Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{release}
+Requires:	%{name}%{?_isa} = %{version}-%{release}
 
 %description devel
 libgpg-error is a library that defines common error values for all
@@ -56,7 +56,7 @@ używających biblioteki libgpg-error.
 Summary:	Static version of libgpg-error library
 Summary(pl.UTF-8):	Statyczna wersja biblioteki libgpg-error
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}-%{release}
+Requires:	%{name}-devel%{?_isa} = %{version}-%{release}
 
 %description static
 libgpg-error is a library that defines common error values for all
