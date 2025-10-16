@@ -5,13 +5,14 @@
 Summary:	Library libgpg-error
 Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
-Version:	1.55
+Version:	1.56
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	https://www.gnupg.org/ftp/gcrypt/libgpg-error/%{name}-%{version}.tar.bz2
-# Source0-md5:	0430e56fd67d0751b83fc18b0f56a084
+# Source0-md5:	af3544d4112b381edacca04a7e804999
 Patch0:		%{name}-info.patch
+Patch1:		%{name}-pl.po-update.patch
 URL:		https://www.gnupg.org/related_software/libgpg-error/
 BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake >= 1:1.14
@@ -88,6 +89,7 @@ Wiązania Common Lispa do biblioteki libgpg-error.
 %prep
 %setup -q
 %patch -P0 -p1
+%patch -P1 -p1
 
 %{__rm} po/stamp-po
 
@@ -125,14 +127,14 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README THANKS
 %attr(755,root,root) %{_bindir}/gpg-error
 %attr(755,root,root) /%{_lib}/libgpg-error.so.*.*.*
-%attr(755,root,root) %ghost /%{_lib}/libgpg-error.so.0
+%ghost /%{_lib}/libgpg-error.so.0
 %{_datadir}/libgpg-error
 
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/gpgrt-config
 %attr(755,root,root) %{_bindir}/yat2m
-%attr(755,root,root) %{_libdir}/libgpg-error.so
+%{_libdir}/libgpg-error.so
 %{_libdir}/libgpg-error.la
 %{_includedir}/gpg-error.h
 %{_includedir}/gpgrt.h
