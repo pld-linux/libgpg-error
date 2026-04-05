@@ -5,12 +5,12 @@
 Summary:	Library libgpg-error
 Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
-Version:	1.58
+Version:	1.59
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	https://www.gnupg.org/ftp/gcrypt/libgpg-error/%{name}-%{version}.tar.bz2
-# Source0-md5:	6bc868c738b8d93698039c7768d8c7b1
+# Source0-md5:	d8afb7b49472cadcc434fa65d6b527ef
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-pl.po-update.patch
 URL:		https://www.gnupg.org/related_software/libgpg-error/
@@ -126,7 +126,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README THANKS
 %attr(755,root,root) %{_bindir}/gpg-error
-%attr(755,root,root) /%{_lib}/libgpg-error.so.*.*.*
+/%{_lib}/libgpg-error.so.*.*.*
 %ghost /%{_lib}/libgpg-error.so.0
 %{_datadir}/libgpg-error
 
