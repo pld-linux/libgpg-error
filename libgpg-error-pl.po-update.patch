@@ -12,7 +12,7 @@
 -"Project-Id-Version: libgpg-error 1.47\n"
 +"Project-Id-Version: libgpg-error 1.59\n"
  "Report-Msgid-Bugs-To: translations@gnupg.org\n"
- "POT-Creation-Date: 2026-02-18 09:40+0100\n"
+ "POT-Creation-Date: 2026-04-24 11:24+0200\n"
 -"PO-Revision-Date: 2023-10-20 20:45+0200\n"
 +"PO-Revision-Date: 2026-04-05 09:41+0200\n"
  "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
@@ -187,50 +187,50 @@
  #: src/err-codes.h:233
  msgid "Bad character in S-expression"
 @@ -973,10 +973,8 @@ msgid "Bad octal character in S-expressi
- msgstr "Błędny znak ósemkowy w S-wyrażeniu"
+ msgstr "Brak algorytmu szyfru"
  
- #: src/err-codes.h:242
+ #: src/err-codes.h:244
 -#, fuzzy
 -#| msgid "Unexpected tag"
  msgid "Unexpected packet"
 -msgstr "Nieoczekiwany znacznik"
 +msgstr "Nieoczekiwany pakiet"
  
- #: src/err-codes.h:243
+ #: src/err-codes.h:245
  msgid "All subkeys are expired or revoked"
 @@ -1300,7 +1298,7 @@ msgstr "Niewłaściwe uwierzytelnienie"
  
- #: src/err-codes.h:323
+ #: src/err-codes.h:325
  msgid "No Keybox daemon running"
 -msgstr "Demon Keybox nie uruchomiony"
 +msgstr "Demon Keybox nieuruchomiony"
  
- #: src/err-codes.h:324
+ #: src/err-codes.h:326
  msgid "Keybox daemon error"
 @@ -1420,7 +1418,7 @@ msgstr "Nie znaleziono sterowania LDAP"
  
- #: src/err-codes.h:353
+ #: src/err-codes.h:356
  msgid "Not supported by LDAP"
 -msgstr "Nie obsługiwane przez LDAP"
 +msgstr "Nieobsługiwane przez LDAP"
  
- #: src/err-codes.h:354
+ #: src/err-codes.h:357
  msgid "LDAP connect error"
 @@ -1841,7 +1839,7 @@ msgstr "Biblioteka SQL użyta niepoprawn
- #: src/err-codes.h:458
+ #: src/err-codes.h:461
  msgid "SQL library uses unsupported OS features"
  msgstr ""
 -"Biblioteka SQL wykorzystuje nie obsługiwane funkcje systemu operacyjnego"
 +"Biblioteka SQL wykorzystuje nieobsługiwane funkcje systemu operacyjnego"
  
- #: src/err-codes.h:459
+ #: src/err-codes.h:462
  msgid "Authorization denied (SQL)"
 @@ -1849,7 +1847,7 @@ msgstr "Autoryzacja odrzucona (SQL)"
  
- #: src/err-codes.h:460
+ #: src/err-codes.h:463
  msgid "(unused SQL code: format)"
 -msgstr "(nie używany kod SQL: format)"
 +msgstr "(nieużywany kod SQL: format)"
  
- #: src/err-codes.h:461
+ #: src/err-codes.h:464
  msgid "SQL bind parameter out of range"
