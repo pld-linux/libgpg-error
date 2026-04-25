@@ -1,5 +1,5 @@
---- libgpg-error-1.59/po/pl.po.orig	2026-02-18 09:40:47.000000000 +0100
-+++ libgpg-error-1.59/po/pl.po	2026-04-05 09:42:20.978838291 +0200
+--- libgpg-error-1.60/po/pl.po.orig	2026-04-24 11:25:00.000000000 +0200
++++ libgpg-error-1.60/po/pl.po	2026-04-25 11:36:16.883758515 +0200
 @@ -1,14 +1,14 @@
  # Polish translation for libgpg-error.
  # Copyright (C) 2004, 2005, 2006 Free Software Foundation, Inc.
@@ -10,11 +10,11 @@
  msgid ""
  msgstr ""
 -"Project-Id-Version: libgpg-error 1.47\n"
-+"Project-Id-Version: libgpg-error 1.59\n"
++"Project-Id-Version: libgpg-error 1.60\n"
  "Report-Msgid-Bugs-To: translations@gnupg.org\n"
  "POT-Creation-Date: 2026-04-24 11:24+0200\n"
 -"PO-Revision-Date: 2023-10-20 20:45+0200\n"
-+"PO-Revision-Date: 2026-04-05 09:41+0200\n"
++"PO-Revision-Date: 2026-04-25 11:34+0200\n"
  "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
  "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
  "Language: pl\n"
@@ -186,8 +186,22 @@
  
  #: src/err-codes.h:233
  msgid "Bad character in S-expression"
-@@ -973,10 +973,8 @@ msgid "Bad octal character in S-expressi
- msgstr "Brak algorytmu szyfru"
+@@ -973,22 +973,16 @@ msgid "Bad octal character in S-expressi
+ msgstr "Błędny znak ósemkowy w S-wyrażeniu"
+ 
+ #: src/err-codes.h:242
+-#, fuzzy
+-#| msgid "Invalid public key algorithm"
+ msgid "Non-compliant public key algorithm"
+-msgstr "Niepoprawny algorytm klucza publicznego"
++msgstr "Niezgodny algorytm klucza publicznego"
+ 
+ #: src/err-codes.h:243
+-#, fuzzy
+-#| msgid "No cipher algorithm"
+ msgid "Non-compliant cipher algorithm"
+-msgstr "Brak algorytmu szyfru"
++msgstr "Niezgodny algorytm szyfru"
  
  #: src/err-codes.h:244
 -#, fuzzy
@@ -198,7 +212,7 @@
  
  #: src/err-codes.h:245
  msgid "All subkeys are expired or revoked"
-@@ -1300,7 +1298,7 @@ msgstr "Niewłaściwe uwierzytelnienie"
+@@ -1312,7 +1306,7 @@ msgstr "Niewłaściwe uwierzytelnienie"
  
  #: src/err-codes.h:325
  msgid "No Keybox daemon running"
@@ -207,7 +221,19 @@
  
  #: src/err-codes.h:326
  msgid "Keybox daemon error"
-@@ -1420,7 +1418,7 @@ msgstr "Nie znaleziono sterowania LDAP"
+@@ -1339,10 +1333,8 @@ msgid "Bad reset code"
+ msgstr "Błędny kod resetujący"
+ 
+ #: src/err-codes.h:332
+-#, fuzzy
+-#| msgid "Invalid digest algorithm"
+ msgid "Non-compliant digest algorithm"
+-msgstr "Niepoprawny algorytm skrótu"
++msgstr "Niezgodny algorytm skrótu"
+ 
+ #: src/err-codes.h:333
+ msgid "System bug detected"
+@@ -1438,7 +1430,7 @@ msgstr "Nie znaleziono sterowania LDAP"
  
  #: src/err-codes.h:356
  msgid "Not supported by LDAP"
@@ -216,7 +242,7 @@
  
  #: src/err-codes.h:357
  msgid "LDAP connect error"
-@@ -1841,7 +1839,7 @@ msgstr "Biblioteka SQL użyta niepoprawn
+@@ -1859,7 +1851,7 @@ msgstr "Biblioteka SQL użyta niepoprawn
  #: src/err-codes.h:461
  msgid "SQL library uses unsupported OS features"
  msgstr ""
@@ -225,7 +251,7 @@
  
  #: src/err-codes.h:462
  msgid "Authorization denied (SQL)"
-@@ -1849,7 +1847,7 @@ msgstr "Autoryzacja odrzucona (SQL)"
+@@ -1867,7 +1859,7 @@ msgstr "Autoryzacja odrzucona (SQL)"
  
  #: src/err-codes.h:463
  msgid "(unused SQL code: format)"
