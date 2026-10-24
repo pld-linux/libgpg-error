@@ -6,7 +6,7 @@ Summary:	Library libgpg-error
 Summary(pl.UTF-8):	Biblioteka libgpg-error
 Name:		libgpg-error
 Version:	1.61
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	https://www.gnupg.org/ftp/gcrypt/libgpg-error/%{name}-%{version}.tar.bz2
@@ -76,7 +76,7 @@ Pakiet zawiera statyczne biblioteki libgpg-error.
 Summary:	Common Lisp binding for libgpg-error library
 Summary(pl.UTF-8):	Wiązania Common Lispa do biblioteki libgpg-error
 Group:		Libraries
-Requires:	%{name} = %{version}-%{release}
+Requires:	%{name}%{?_isa} = %{version}-%{release}
 Requires:	common-lisp-controller
 
 %description -n common-lisp-gpg-error
